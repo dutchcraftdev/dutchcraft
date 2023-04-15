@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/socorore",
+    "up": "dutchcraft:blocks/socorore",
+    "north": "dutchcraft:blocks/socorore",
+    "east": "dutchcraft:blocks/socorore",
+    "south": "dutchcraft:blocks/socorore",
+    "west": "dutchcraft:blocks/socorore",
+    "particle": "dutchcraft:blocks/socorore"
+  }
+}

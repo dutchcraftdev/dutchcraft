@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:rugby"
+    },
+    {
+      "item": "dutchcraft:rugby"
+    },
+    {
+      "item": "dutchcraft:rugby"
+    },
+    {
+      "item": "dutchcraft:rugby"
+    },
+    {
+      "item": "dutchcraft:rugby"
+    },
+    {
+      "item": "dutchcraft:rugby"
+    },
+    {
+      "item": "dutchcraft:rugby"
+    },
+    {
+      "item": "dutchcraft:rugby"
+    },
+    {
+      "item": "dutchcraft:rugby"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:rugby_block",
+    "count": 1
+  }
+}

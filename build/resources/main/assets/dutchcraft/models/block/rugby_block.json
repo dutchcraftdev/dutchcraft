@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/rugbyvl",
+    "up": "dutchcraft:blocks/rugbyvl",
+    "north": "dutchcraft:blocks/rugbyvl",
+    "east": "dutchcraft:blocks/rugbyvl",
+    "south": "dutchcraft:blocks/rugbyvl",
+    "west": "dutchcraft:blocks/rugbyvl",
+    "particle": "dutchcraft:blocks/rugbyvl"
+  }
+}

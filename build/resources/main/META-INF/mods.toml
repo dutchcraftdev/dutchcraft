@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="dutchcraft"
+version="0.0.0"
+displayName="Dutchcraft"
+credits="Dutchman"
+displayURL="https://mcreator.net"
+authors="Dutchman"
+description='''
+Please ignore version name on Minecraft it is incorrect
+'''
+
+[[dependencies.dutchcraft]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

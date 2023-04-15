@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:socor"
+    },
+    {
+      "item": "dutchcraft:socor"
+    },
+    {
+      "item": "dutchcraft:socor"
+    },
+    {
+      "item": "dutchcraft:socor"
+    },
+    {
+      "item": "dutchcraft:socor"
+    },
+    {
+      "item": "dutchcraft:socor"
+    },
+    {
+      "item": "dutchcraft:socor"
+    },
+    {
+      "item": "dutchcraft:socor"
+    },
+    {
+      "item": "dutchcraft:socor"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:socor_block",
+    "count": 1
+  }
+}
