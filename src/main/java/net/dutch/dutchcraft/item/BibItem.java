@@ -44,7 +44,7 @@ public class BibItem extends DutchcraftModElements.ModElement {
 
 			@Override
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{2, 0, 0, 1}[slot.getIndex()];
+				return new int[]{2, 0, 1, 0}[slot.getIndex()];
 			}
 
 			@Override
