@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:lucas_o_reiley_bone"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:lucas_o_reiley_bone_meal",
+    "count": 3
+  }
+}

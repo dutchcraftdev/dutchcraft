@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dutchcraft:items/bill_o_reiley_bone_meal"
+  }
+}
