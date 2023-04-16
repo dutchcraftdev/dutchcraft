@@ -14,10 +14,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
-import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
@@ -30,7 +28,6 @@ import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
@@ -40,7 +37,6 @@ import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.block.BlockState;
 
 import net.dutch.dutchcraft.itemgroup.DUTCHCRAFTItemGroup;
 import net.dutch.dutchcraft.item.FryingPanItem;
@@ -230,7 +226,6 @@ public class LucasOReileyEntity extends DutchcraftModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
 			ammma = ammma.createMutableAttribute(Attributes.FOLLOW_RANGE, 16);
-			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.15);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -245,8 +240,6 @@ public class LucasOReileyEntity extends DutchcraftModElements.ModElement {
 			experienceValue = 0;
 			setNoAI(false);
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(FryingPanItem.block));
-			this.moveController = new FlyingMovementController(this, 10, true);
-			this.navigator = new FlyingPathNavigator(this, this.world);
 		}
 
 		@Override
@@ -284,23 +277,8 @@ public class LucasOReileyEntity extends DutchcraftModElements.ModElement {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 		}
 
-		@Override
-		public boolean onLivingFall(float l, float d) {
-			return false;
-		}
-
-		@Override
-		protected void updateFallState(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
-		}
-
-		@Override
-		public void setNoGravity(boolean ignored) {
-			super.setNoGravity(true);
-		}
-
 		public void livingTick() {
 			super.livingTick();
-			this.setNoGravity(true);
 			double x = this.getPosX();
 			double y = this.getPosY();
 			double z = this.getPosZ();
