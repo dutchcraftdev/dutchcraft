@@ -62,7 +62,7 @@ public class ZombieTwoEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.8f)).build("zombie_two").setRegistryName("zombie_two");
 
 	public ZombieTwoEntity(DutchcraftModElements instance) {
-		super(instance, 26);
+		super(instance, 27);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ZombieTwoRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -109,7 +109,7 @@ public class ZombieTwoEntity extends DutchcraftModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 0;
+			experienceValue = 8;
 			setNoAI(false);
 		}
 

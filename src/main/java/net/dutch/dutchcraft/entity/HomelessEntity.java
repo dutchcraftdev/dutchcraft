@@ -28,14 +28,11 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -55,7 +52,7 @@ public class HomelessEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.95f)).build("homeless").setRegistryName("homeless");
 
 	public HomelessEntity(DutchcraftModElements instance) {
-		super(instance, 30);
+		super(instance, 31);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new HomelessRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -113,16 +110,9 @@ public class HomelessEntity extends DutchcraftModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
-				@Override
-				protected double getAttackReachSqr(LivingEntity entity) {
-					return (double) (4.0 + entity.getWidth() * entity.getWidth());
-				}
-			});
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(3, new SwimGoal(this));
 		}
 
 		@Override

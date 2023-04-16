@@ -58,7 +58,7 @@ public class SensitiveCreeperEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.7f)).build("sensitive_creeper").setRegistryName("sensitive_creeper");
 
 	public SensitiveCreeperEntity(DutchcraftModElements instance) {
-		super(instance, 28);
+		super(instance, 29);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SensitiveCreeperRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -102,7 +102,7 @@ public class SensitiveCreeperEntity extends DutchcraftModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 0;
+			experienceValue = 7;
 			setNoAI(false);
 		}
 

@@ -1,0 +1,48 @@
+{
+  "_fv": 33,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "cheap_explosive",
+    "customModelName": "Normal",
+    "name": "Cheap Explosive",
+    "specialInfo": [
+      "WARNING: item is very broken"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:DUTCHCRAFT"
+    },
+    "stackSize": 64,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "CheapExplosiveRangedItemUsed"
+    },
+    "bulletPower": 0.8,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:CheapExplosive"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "CheapExplosiveProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "CheapExplosiveProjectileHitsBlock"
+    }
+  }
+}

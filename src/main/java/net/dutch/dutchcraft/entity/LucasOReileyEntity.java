@@ -52,7 +52,7 @@ public class LucasOReileyEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.8f)).build("lucas_o_reiley").setRegistryName("lucas_o_reiley");
 
 	public LucasOReileyEntity(DutchcraftModElements instance) {
-		super(instance, 27);
+		super(instance, 28);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LucasOReileyRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -237,7 +237,7 @@ public class LucasOReileyEntity extends DutchcraftModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 0;
+			experienceValue = 10;
 			setNoAI(false);
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(FryingPanItem.block));
 		}

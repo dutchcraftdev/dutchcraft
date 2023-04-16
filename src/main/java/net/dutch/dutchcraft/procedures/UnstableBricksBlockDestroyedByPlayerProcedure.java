@@ -39,7 +39,7 @@ public class UnstableBricksBlockDestroyedByPlayerProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
 		if (world instanceof World && !((World) world).isRemote) {
-			((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 2, Explosion.Mode.BREAK);
+			((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 3, Explosion.Mode.BREAK);
 		}
 	}
 }
