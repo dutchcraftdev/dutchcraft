@@ -215,6 +215,69 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_cooked_meat_recipe"
+    },
+    {
+      "name": "DoSuicideBrickExplosions",
+      "type": "gamerule",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doSuicideBrickExplosions",
+      "metadata": {
+        "type": "logic"
+      }
+    },
+    {
+      "name": "SuicideBricks",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide_bricks"
+    },
+    {
+      "name": "SuicideBricksUpdateTick",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide_bricks_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuicideBricksRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide_bricks_recipe"
+    },
+    {
+      "name": "SuicideHouse",
+      "type": "structure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suicide_house"
     }
   ],
   "variable_elements": [],
@@ -222,7 +285,10 @@
   "language_map": {
     "en_us": {
       "item.dutchcraft.rugby": "Rugby",
+      "gamerule.doSuicideBrickExplosions.description": "Whether Suicide Bricks commit suicide",
+      "gamerule.doSuicideBrickExplosions": "doSuicideBrickExplosions",
       "item.dutchcraft.socor": "Socor",
+      "block.dutchcraft.suicide_bricks": "Suicide Bricks",
       "item.dutchcraft.lucas_o_reiley_bone_meal": "Lucas O\u0027Reiley Bone Meal",
       "item.dutchcraft.lucas_o_reiley_spawn_egg": "Lucas O\u0027Reiley Spawn Egg",
       "block.dutchcraft.socor_block": "Block of Socor",

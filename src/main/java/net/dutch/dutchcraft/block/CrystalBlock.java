@@ -8,6 +8,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.loot.LootContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -18,7 +20,11 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.dutch.dutchcraft.itemgroup.DUTCHCRAFTItemGroup;
+import net.dutch.dutchcraft.item.CrystalItemItem;
 import net.dutch.dutchcraft.DutchcraftModElements;
+
+import java.util.List;
+import java.util.Collections;
 
 @DutchcraftModElements.ModElement.Tag
 public class CrystalBlock extends DutchcraftModElements.ModElement {
@@ -51,6 +57,14 @@ public class CrystalBlock extends DutchcraftModElements.ModElement {
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return 15;
+		}
+
+		@Override
+		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+			if (!dropsOriginal.isEmpty())
+				return dropsOriginal;
+			return Collections.singletonList(new ItemStack(CrystalItemItem.block, (int) (9)));
 		}
 	}
 }

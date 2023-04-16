@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/suicide_bricks",
+    "up": "dutchcraft:blocks/suicide_bricks",
+    "north": "dutchcraft:blocks/suicide_bricks",
+    "east": "dutchcraft:blocks/suicide_bricks",
+    "south": "dutchcraft:blocks/suicide_bricks",
+    "west": "dutchcraft:blocks/suicide_bricks",
+    "particle": "dutchcraft:blocks/suicide_bricks"
+  }
+}

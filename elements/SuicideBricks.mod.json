@@ -2,12 +2,12 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "crystal",
-    "textureTop": "crystal",
-    "textureLeft": "crystal",
-    "textureFront": "crystal",
-    "textureRight": "crystal",
-    "textureBack": "crystal",
+    "texture": "suicide_bricks",
+    "textureTop": "suicide_bricks",
+    "textureLeft": "suicide_bricks",
+    "textureFront": "suicide_bricks",
+    "textureRight": "suicide_bricks",
+    "textureBack": "suicide_bricks",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -18,9 +18,9 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "TRANSLUCENT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Block of Crystal",
+    "name": "Suicide Bricks",
     "specialInfo": [],
-    "hardness": 0.95,
-    "resistance": 10.0,
+    "hardness": 3.0,
+    "resistance": 12.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -44,9 +44,9 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:CrystalItem"
+      "value": ""
     },
-    "dropAmount": 9,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
@@ -54,9 +54,9 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "GLASS"
+      "value": "ROCK"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -123,6 +123,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "SuicideBricksUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

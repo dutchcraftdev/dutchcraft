@@ -1,6 +1,9 @@
 {
   "item.dutchcraft.rugby": "Rugby",
+  "gamerule.doSuicideBrickExplosions.description": "Whether Suicide Bricks commit suicide",
+  "gamerule.doSuicideBrickExplosions": "doSuicideBrickExplosions",
   "item.dutchcraft.socor": "Socor",
+  "block.dutchcraft.suicide_bricks": "Suicide Bricks",
   "item.dutchcraft.lucas_o_reiley_bone_meal": "Lucas O\u0027Reiley Bone Meal",
   "item.dutchcraft.lucas_o_reiley_spawn_egg": "Lucas O\u0027Reiley Spawn Egg",
   "block.dutchcraft.socor_block": "Block of Socor",
