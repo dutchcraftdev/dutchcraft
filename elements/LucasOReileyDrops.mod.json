@@ -5,8 +5,8 @@
     "type": "Entity",
     "pools": [
       {
-        "minrolls": 1,
-        "maxrolls": 2,
+        "minrolls": 2,
+        "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
         "hasbonusrolls": false,
@@ -24,11 +24,25 @@
             "affectedByFortune": false,
             "explosionDecay": false,
             "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:FryingPan"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
           }
         ]
       }
     ],
-    "name": "entities/lucasoreiley",
+    "name": "entities/lucas_o_reiley",
     "namespace": "mod"
   }
 }

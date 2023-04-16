@@ -46,7 +46,7 @@ public class FryingPanItem extends DutchcraftModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3.7f, new Item.Properties().group(DUTCHCRAFTItemGroup.tab).isImmuneToFire()) {
+		}, 3, -3.5f, new Item.Properties().group(DUTCHCRAFTItemGroup.tab).isImmuneToFire()) {
 		}.setRegistryName("frying_pan"));
 	}
 }

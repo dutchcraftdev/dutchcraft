@@ -97,20 +97,20 @@
       "registry_name": "lucas_o_reiley_bone"
     },
     {
+      "name": "LucasOReileyDrop",
+      "type": "loottable",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley_drop"
+    },
+    {
       "name": "FryingPan",
       "type": "tool",
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frying_pan"
-    },
-    {
-      "name": "LucasOReileyDrops",
-      "type": "loottable",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lucas_o_reiley_drops"
     }
   ],
   "variable_elements": [],

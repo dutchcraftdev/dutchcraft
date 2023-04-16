@@ -79,6 +79,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "rugby_item_standard_recipe"
+    },
+    {
+      "name": "LucasOReiley",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley"
+    },
+    {
+      "name": "LucasOReileyBone",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley_bone"
+    },
+    {
+      "name": "LucasOReileyDrop",
+      "type": "loottable",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley_drop"
+    },
+    {
+      "name": "FryingPan",
+      "type": "tool",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frying_pan"
     }
   ],
   "variable_elements": [],
@@ -87,7 +119,11 @@
     "en_us": {
       "item.dutchcraft.rugby": "Rugby",
       "item.dutchcraft.logo": "",
+      "item.dutchcraft.lucas_o_reiley_bone": "Lucas O\u0027Reiley Bone",
       "item.dutchcraft.socor": "Socor",
+      "entity.dutchcraft.lucas_o_reiley": "Lucas O\u0027Reiley",
+      "item.dutchcraft.frying_pan": "Frying Pan",
+      "item.dutchcraft.lucas_o_reiley_spawn_egg": "Lucas O\u0027Reiley Spawn Egg",
       "block.dutchcraft.rugby_block": "Rugby Block",
       "itemGroup.tabdutchcraft": "DUTCHCRAFT",
       "block.dutchcraft.socor_block": "Socor Block",
