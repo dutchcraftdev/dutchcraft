@@ -13,7 +13,7 @@ import net.dutch.dutchcraft.DutchcraftModElements;
 @DutchcraftModElements.ModElement.Tag
 public class DUTCHCRAFTItemGroup extends DutchcraftModElements.ModElement {
 	public DUTCHCRAFTItemGroup(DutchcraftModElements instance) {
-		super(instance, 2);
+		super(instance, 31);
 	}
 
 	@Override

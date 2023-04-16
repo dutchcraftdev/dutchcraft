@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/hostile_bricks",
+    "up": "dutchcraft:blocks/hostile_bricks",
+    "north": "dutchcraft:blocks/hostile_bricks",
+    "east": "dutchcraft:blocks/hostile_bricks",
+    "south": "dutchcraft:blocks/hostile_bricks",
+    "west": "dutchcraft:blocks/hostile_bricks",
+    "particle": "dutchcraft:blocks/hostile_bricks"
+  }
+}

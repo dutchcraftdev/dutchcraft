@@ -16,7 +16,7 @@ public class LogoItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public LogoItem(DutchcraftModElements instance) {
-		super(instance, 3);
+		super(instance, 32);
 	}
 
 	@Override

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/unstable_bricks",
+    "up": "dutchcraft:blocks/unstable_bricks",
+    "north": "dutchcraft:blocks/unstable_bricks",
+    "east": "dutchcraft:blocks/unstable_bricks",
+    "south": "dutchcraft:blocks/unstable_bricks",
+    "west": "dutchcraft:blocks/unstable_bricks",
+    "particle": "dutchcraft:blocks/unstable_bricks"
+  }
+}

@@ -46,6 +46,8 @@ public class DutchcraftModElements {
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 
 	public DutchcraftModElements() {
+		sounds.put(new ResourceLocation("dutchcraft", "entity.crow.ambient"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "entity.crow.ambient")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("dutchcraft").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

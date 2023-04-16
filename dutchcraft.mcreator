@@ -3,7 +3,7 @@
     {
       "name": "Socor",
       "type": "item",
-      "sortid": 1,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "socor"
@@ -11,7 +11,7 @@
     {
       "name": "DUTCHCRAFT",
       "type": "tab",
-      "sortid": 2,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchcraft"
@@ -19,7 +19,7 @@
     {
       "name": "Logo",
       "type": "item",
-      "sortid": 3,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "logo"
@@ -27,7 +27,7 @@
     {
       "name": "SocorOre",
       "type": "block",
-      "sortid": 2,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "socor_ore"
@@ -35,7 +35,7 @@
     {
       "name": "SocorBlock",
       "type": "block",
-      "sortid": 4,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "socor_block"
@@ -43,7 +43,7 @@
     {
       "name": "Rugby",
       "type": "item",
-      "sortid": 5,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rugby"
@@ -51,7 +51,7 @@
     {
       "name": "RugbyBlock",
       "type": "block",
-      "sortid": 6,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rugby_block"
@@ -59,7 +59,7 @@
     {
       "name": "SocorBlockRecipeStandard",
       "type": "recipe",
-      "sortid": 7,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "socor_block_recipe_standard"
@@ -67,7 +67,7 @@
     {
       "name": "RugbyBlockRecipeStandard",
       "type": "recipe",
-      "sortid": 8,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rugby_block_recipe_standard"
@@ -75,7 +75,7 @@
     {
       "name": "RugbyItemStandardRecipe",
       "type": "recipe",
-      "sortid": 9,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rugby_item_standard_recipe"
@@ -83,7 +83,7 @@
     {
       "name": "LucasOReiley",
       "type": "livingentity",
-      "sortid": 10,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley"
@@ -91,7 +91,7 @@
     {
       "name": "LucasOReileyBone",
       "type": "item",
-      "sortid": 11,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_bone"
@@ -99,7 +99,7 @@
     {
       "name": "FryingPan",
       "type": "tool",
-      "sortid": 13,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frying_pan"
@@ -107,7 +107,7 @@
     {
       "name": "LucasOReileyDrops",
       "type": "loottable",
-      "sortid": 14,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_drops"
@@ -115,7 +115,7 @@
     {
       "name": "LucasOReileyBoneMeal",
       "type": "item",
-      "sortid": 15,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_bone_meal"
@@ -123,7 +123,7 @@
     {
       "name": "LucasOReileyBoneMealRecipeStandard",
       "type": "recipe",
-      "sortid": 16,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_bone_meal_recipe_standard"
@@ -131,7 +131,7 @@
     {
       "name": "Crystal",
       "type": "block",
-      "sortid": 17,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_block"
@@ -139,7 +139,7 @@
     {
       "name": "CrystalItem",
       "type": "item",
-      "sortid": 18,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal"
@@ -147,7 +147,7 @@
     {
       "name": "CrystalBlockToCrystal",
       "type": "recipe",
-      "sortid": 19,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_block_to_crystal"
@@ -155,7 +155,7 @@
     {
       "name": "CrystalToCrystalBlock",
       "type": "recipe",
-      "sortid": 20,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_to_crystal_block"
@@ -163,7 +163,7 @@
     {
       "name": "LucasOReileyBoneMealRightclickedOnBlock",
       "type": "procedure",
-      "sortid": 21,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_bone_meal_rightclicked_on_block",
@@ -195,7 +195,7 @@
     {
       "name": "LucasOReileyMeat",
       "type": "item",
-      "sortid": 22,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_meat"
@@ -203,7 +203,7 @@
     {
       "name": "LucasOReileyMeatCooked",
       "type": "item",
-      "sortid": 23,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_meat_cooked"
@@ -211,7 +211,7 @@
     {
       "name": "LucasOReileyCookedMeatRecipe",
       "type": "recipe",
-      "sortid": 24,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_cooked_meat_recipe"
@@ -219,7 +219,7 @@
     {
       "name": "DoSuicideBrickExplosions",
       "type": "gamerule",
-      "sortid": 25,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "doSuicideBrickExplosions",
@@ -230,7 +230,7 @@
     {
       "name": "SuicideBricks",
       "type": "block",
-      "sortid": 25,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suicide_bricks"
@@ -238,7 +238,7 @@
     {
       "name": "SuicideBricksUpdateTick",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suicide_bricks_update_tick",
@@ -266,7 +266,7 @@
     {
       "name": "SuicideBricksRecipe",
       "type": "recipe",
-      "sortid": 28,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suicide_bricks_recipe"
@@ -274,7 +274,7 @@
     {
       "name": "SuicideHouse",
       "type": "structure",
-      "sortid": 29,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suicide_house"
@@ -282,7 +282,7 @@
     {
       "name": "ZombieTwoOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 30,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zombie_two_on_initial_entity_spawn",
@@ -298,37 +298,370 @@
     {
       "name": "ZombieTwo",
       "type": "livingentity",
-      "sortid": 30,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zombie_two"
+    },
+    {
+      "name": "Antidepressants",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antidepressants"
+    },
+    {
+      "name": "AntidepressantsRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antidepressants_recipe"
+    },
+    {
+      "name": "HostileBricks",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bricks"
+    },
+    {
+      "name": "HostileBricksEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bricks_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HostileBricksRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_bricks_recipe"
+    },
+    {
+      "name": "SensitiveCreeperExplodeInSunlight",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sensitive_creeper_explode_in_sunlight",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SensitiveCreeperRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sensitive_creeper_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SensitiveCreeper",
+      "type": "livingentity",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sensitive_creeper"
+    },
+    {
+      "name": "Crow",
+      "type": "livingentity",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crow"
+    },
+    {
+      "name": "DryKeys",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dry_keys"
+    },
+    {
+      "name": "StickyKeys",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sticky_keys"
+    },
+    {
+      "name": "Keyboard",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "keyboard"
+    },
+    {
+      "name": "DryKeysToKeyboard",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dry_keys_to_keyboard"
+    },
+    {
+      "name": "CrowMeet",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crow_meet"
+    },
+    {
+      "name": "CrowMeetCooked",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crow_meet_cooked"
+    },
+    {
+      "name": "CrowDrops",
+      "type": "loottable",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crow_drops"
+    },
+    {
+      "name": "UnstableBricks",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unstable_bricks"
+    },
+    {
+      "name": "UnstableBricksBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unstable_bricks_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Slingshot",
+      "type": "rangeditem",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slingshot"
+    },
+    {
+      "name": "SlingshotRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slingshot_recipe"
+    },
+    {
+      "name": "AutoSlingshot",
+      "type": "rangeditem",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_slingshot"
+    },
+    {
+      "name": "AutoSlingshotRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_slingshot_recipe"
+    },
+    {
+      "name": "Homeless",
+      "type": "livingentity",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homeless"
+    },
+    {
+      "name": "Bib",
+      "type": "armor",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bib",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "PunyCoin",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "puny_coin"
+    },
+    {
+      "name": "HomelessLoottable",
+      "type": "loottable",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "homeless_loottable"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "entity.crow.ambient",
+      "files": [
+        "crow"
+      ],
+      "category": "ambient",
+      "subtitle": "Cawing sounds"
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.dutchcraft.rugby": "Rugby",
-      "gamerule.doSuicideBrickExplosions.description": "Whether Suicide Bricks commit suicide",
       "gamerule.doSuicideBrickExplosions": "doSuicideBrickExplosions",
       "item.dutchcraft.socor": "Socor",
       "block.dutchcraft.suicide_bricks": "Suicide Bricks",
       "item.dutchcraft.lucas_o_reiley_bone_meal": "Lucas O\u0027Reiley Bone Meal",
-      "item.dutchcraft.lucas_o_reiley_spawn_egg": "Lucas O\u0027Reiley Spawn Egg",
-      "block.dutchcraft.socor_block": "Block of Socor",
-      "item.dutchcraft.crystal": "Crystal Item",
+      "block.dutchcraft.hostile_bricks": "Hostile Bricks",
       "block.dutchcraft.socor_ore": "Socor Ore",
-      "item.dutchcraft.lucas_o_reiley_meat": "Lucas O\u0027Reiley Meat",
-      "item.dutchcraft.zombie_two_spawn_egg": "Zombie Two Spawn Egg",
+      "item.dutchcraft.auto_slingshot": "Autoslingshot",
+      "entity.dutchcraft.homeless": "Homeless Person",
+      "item.dutchcraft.crow_spawn_egg": "Crow Spawn Egg",
       "item.dutchcraft.logo": "Logo",
       "item.dutchcraft.lucas_o_reiley_bone": "Lucas O\u0027Reiley Bone",
+      "item.dutchcraft.puny_coin": "Puny Coin",
+      "block.dutchcraft.unstable_bricks": "Unstable Bricks",
+      "item.dutchcraft.sensitive_creeper_spawn_egg": "Sensitive Creeper Spawn Egg",
+      "block.dutchcraft.rugby_block": "Block of Rugby",
+      "item.dutchcraft.homeless_spawn_egg": "Homeless Person Spawn Egg",
+      "item.dutchcraft.crow_meet_cooked": "Cooked Crow Meet",
+      "gamerule.doSuicideBrickExplosions.description": "Whether Suicide Bricks commit suicide",
+      "item.dutchcraft.bib_chestplate": "Bib",
+      "item.dutchcraft.crow_meet": "Crow Meet",
+      "item.dutchcraft.lucas_o_reiley_spawn_egg": "Lucas O\u0027Reiley Spawn Egg",
+      "item.dutchcraft.antidepressants": "Antidepressants",
+      "item.dutchcraft.bib_boots": "Bib Boots",
+      "item.dutchcraft.bib_helmet": "Bib",
+      "block.dutchcraft.socor_block": "Block of Socor",
+      "item.dutchcraft.crystal": "Crystal Item",
+      "item.dutchcraft.slingshot": "Slingshot",
+      "item.dutchcraft.lucas_o_reiley_meat": "Lucas O\u0027Reiley Meat",
+      "item.dutchcraft.zombie_two_spawn_egg": "Zombie Two Spawn Egg",
+      "item.dutchcraft.bib_leggings": "Bib Leggings",
+      "entity.dutchcraft.crow": "Crow",
       "entity.dutchcraft.lucas_o_reiley": "Lucas O\u0027Reiley",
       "item.dutchcraft.frying_pan": "Frying Pan",
+      "item.dutchcraft.dry_keys": "Dry Keys",
+      "item.dutchcraft.sticky_keys": "Sticky Keys",
       "entity.dutchcraft.zombie_two": "Zombie Two",
+      "item.dutchcraft.keyboard": "Keyboard",
       "block.dutchcraft.crystal_block": "Block of Crystal",
-      "block.dutchcraft.rugby_block": "Block of Rugby",
       "itemGroup.tabdutchcraft": "DUTCHCRAFT",
-      "item.dutchcraft.lucas_o_reiley_meat_cooked": "Cooked Lucas O\u0027Reiley Meat"
+      "item.dutchcraft.lucas_o_reiley_meat_cooked": "Cooked Lucas O\u0027Reiley Meat",
+      "entity.dutchcraft.sensitive_creeper": "Sensitive Creeper",
+      "subtitles.entity.crow.ambient": "Cawing sounds"
     }
   },
   "foldersRoot": {

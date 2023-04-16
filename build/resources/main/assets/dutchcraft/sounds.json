@@ -1,0 +1,12 @@
+{
+  "entity.crow.ambient": {
+    "category": "ambient",
+    "subtitle": "subtitles.entity.crow.ambient",
+    "sounds": [
+      {
+        "name": "dutchcraft:crow",
+        "stream": false
+      }
+    ]
+  }
+}
