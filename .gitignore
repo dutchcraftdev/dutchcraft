@@ -1,4 +1,4 @@
 .mcreator/*
 .gradle/*
 .settings/*
-.run/*
+run/*
