@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/crystal",
+    "up": "dutchcraft:blocks/crystal",
+    "north": "dutchcraft:blocks/crystal",
+    "east": "dutchcraft:blocks/crystal",
+    "south": "dutchcraft:blocks/crystal",
+    "west": "dutchcraft:blocks/crystal",
+    "particle": "dutchcraft:blocks/crystal"
+  }
+}

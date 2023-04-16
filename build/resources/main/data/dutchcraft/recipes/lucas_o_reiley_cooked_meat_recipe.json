@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 4,
+  "cookingtime": 500,
+  "ingredient": {
+    "item": "dutchcraft:lucas_o_reiley_meat"
+  },
+  "result": {
+    "item": "dutchcraft:lucas_o_reiley_meat_cooked"
+  }
+}

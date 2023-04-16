@@ -1,0 +1,20 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 4.0,
+    "cookingTime": 500,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:LucasOReileyMeat"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:LucasOReileyMeatCooked"
+    },
+    "name": "lucas_o_reiley_cooked_meat_recipe",
+    "namespace": "mod"
+  }
+}

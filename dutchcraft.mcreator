@@ -127,6 +127,94 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_bone_meal_recipe_standard"
+    },
+    {
+      "name": "Crystal",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_block"
+    },
+    {
+      "name": "CrystalItem",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal"
+    },
+    {
+      "name": "CrystalBlockToCrystal",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_block_to_crystal"
+    },
+    {
+      "name": "CrystalToCrystalBlock",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_to_crystal_block"
+    },
+    {
+      "name": "LucasOReileyBoneMealRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley_bone_meal_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LucasOReileyMeat",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley_meat"
+    },
+    {
+      "name": "LucasOReileyMeatCooked",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley_meat_cooked"
+    },
+    {
+      "name": "LucasOReileyCookedMeatRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley_cooked_meat_recipe"
     }
   ],
   "variable_elements": [],
@@ -138,13 +226,17 @@
       "item.dutchcraft.lucas_o_reiley_bone_meal": "Lucas O\u0027Reiley Bone Meal",
       "item.dutchcraft.lucas_o_reiley_spawn_egg": "Lucas O\u0027Reiley Spawn Egg",
       "block.dutchcraft.socor_block": "Block of Socor",
+      "item.dutchcraft.crystal": "Crystal Item",
       "block.dutchcraft.socor_ore": "Socor Ore",
-      "item.dutchcraft.logo": "",
+      "item.dutchcraft.lucas_o_reiley_meat": "Lucas O\u0027Reiley Meat",
+      "item.dutchcraft.logo": "Logo",
       "item.dutchcraft.lucas_o_reiley_bone": "Lucas O\u0027Reiley Bone",
       "entity.dutchcraft.lucas_o_reiley": "Lucas O\u0027Reiley",
       "item.dutchcraft.frying_pan": "Frying Pan",
+      "block.dutchcraft.crystal_block": "Block of Crystal",
       "block.dutchcraft.rugby_block": "Block of Rugby",
-      "itemGroup.tabdutchcraft": "DUTCHCRAFT"
+      "itemGroup.tabdutchcraft": "DUTCHCRAFT",
+      "item.dutchcraft.lucas_o_reiley_meat_cooked": "Cooked Lucas O\u0027Reiley Meat"
     }
   },
   "foldersRoot": {

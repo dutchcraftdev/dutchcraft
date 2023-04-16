@@ -4,11 +4,15 @@
   "item.dutchcraft.lucas_o_reiley_bone_meal": "Lucas O\u0027Reiley Bone Meal",
   "item.dutchcraft.lucas_o_reiley_spawn_egg": "Lucas O\u0027Reiley Spawn Egg",
   "block.dutchcraft.socor_block": "Block of Socor",
+  "item.dutchcraft.crystal": "Crystal Item",
   "block.dutchcraft.socor_ore": "Socor Ore",
-  "item.dutchcraft.logo": "",
+  "item.dutchcraft.lucas_o_reiley_meat": "Lucas O\u0027Reiley Meat",
+  "item.dutchcraft.logo": "Logo",
   "item.dutchcraft.lucas_o_reiley_bone": "Lucas O\u0027Reiley Bone",
   "entity.dutchcraft.lucas_o_reiley": "Lucas O\u0027Reiley",
   "item.dutchcraft.frying_pan": "Frying Pan",
+  "block.dutchcraft.crystal_block": "Block of Crystal",
   "block.dutchcraft.rugby_block": "Block of Rugby",
-  "itemGroup.tabdutchcraft": "DUTCHCRAFT"
+  "itemGroup.tabdutchcraft": "DUTCHCRAFT",
+  "item.dutchcraft.lucas_o_reiley_meat_cooked": "Cooked Lucas O\u0027Reiley Meat"
 }

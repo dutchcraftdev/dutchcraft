@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:crystal"
+    },
+    {
+      "item": "dutchcraft:crystal"
+    },
+    {
+      "item": "dutchcraft:crystal"
+    },
+    {
+      "item": "dutchcraft:crystal"
+    },
+    {
+      "item": "dutchcraft:crystal"
+    },
+    {
+      "item": "dutchcraft:crystal"
+    },
+    {
+      "item": "dutchcraft:crystal"
+    },
+    {
+      "item": "dutchcraft:crystal"
+    },
+    {
+      "item": "dutchcraft:crystal"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:crystal_block",
+    "count": 1
+  }
+}
