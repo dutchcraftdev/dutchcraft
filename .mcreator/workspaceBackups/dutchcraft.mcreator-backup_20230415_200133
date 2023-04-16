@@ -39,14 +39,75 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "socor_block"
+    },
+    {
+      "name": "Rugby",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rugby"
+    },
+    {
+      "name": "RugbyBlock",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rugby_block"
+    },
+    {
+      "name": "SocorBlockRecipeStandard",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "socor_block_recipe_standard"
+    },
+    {
+      "name": "RugbyBlockRecipeStandard",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rugby_block_recipe_standard"
+    },
+    {
+      "name": "RugbyItemStandardRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rugby_item_standard_recipe"
+    },
+    {
+      "name": "LucasOReiley",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley"
+    },
+    {
+      "name": "LucasOReileyBone",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lucas_o_reiley_bone"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.dutchcraft.rugby": "Rugby",
       "item.dutchcraft.logo": "",
+      "item.dutchcraft.lucas_o_reiley_bone": "Lucas O\u0027Reiley Bone",
       "item.dutchcraft.socor": "Socor",
+      "entity.dutchcraft.lucas_o_reiley": "Lucas O\u0027Reiley",
+      "item.dutchcraft.lucas_o_reiley_spawn_egg": "Lucas O\u0027Reiley Spawn Egg",
+      "block.dutchcraft.rugby_block": "Rugby Block",
       "itemGroup.tabdutchcraft": "DUTCHCRAFT",
       "block.dutchcraft.socor_block": "Socor Block",
       "block.dutchcraft.socor_ore": "Socor Ore"

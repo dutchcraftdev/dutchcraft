@@ -1,0 +1,27 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "pan",
+    "customModelName": "Normal",
+    "name": "Frying Pan",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DUTCHCRAFT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.3,
+    "enchantability": 2,
+    "damageVsEntity": 25.0,
+    "usageCount": 50,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
