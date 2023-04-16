@@ -6,19 +6,18 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.Food;
 import net.minecraft.block.BlockState;
 
 import net.dutch.dutchcraft.itemgroup.DUTCHCRAFTItemGroup;
 import net.dutch.dutchcraft.DutchcraftModElements;
 
 @DutchcraftModElements.ModElement.Tag
-public class LucasOReileyMeatItem extends DutchcraftModElements.ModElement {
-	@ObjectHolder("dutchcraft:lucas_o_reiley_meat")
+public class PunyCoinItem extends DutchcraftModElements.ModElement {
+	@ObjectHolder("dutchcraft:puny_coin")
 	public static final Item block = null;
 
-	public LucasOReileyMeatItem(DutchcraftModElements instance) {
-		super(instance, 24);
+	public PunyCoinItem(DutchcraftModElements instance) {
+		super(instance, 18);
 	}
 
 	@Override
@@ -28,11 +27,8 @@ public class LucasOReileyMeatItem extends DutchcraftModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(DUTCHCRAFTItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(12).saturation(0.9f)
-
-							.meat().build()));
-			setRegistryName("lucas_o_reiley_meat");
+			super(new Item.Properties().group(DUTCHCRAFTItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("puny_coin");
 		}
 
 		@Override
