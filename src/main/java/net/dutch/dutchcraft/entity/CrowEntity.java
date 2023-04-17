@@ -40,13 +40,20 @@ import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AgeableEntity;
 import net.minecraft.block.BlockState;
 
+import net.dutch.dutchcraft.procedures.CrowEntityDiesProcedure;
 import net.dutch.dutchcraft.itemgroup.DUTCHCRAFTItemGroup;
 import net.dutch.dutchcraft.entity.renderer.CrowRenderer;
 import net.dutch.dutchcraft.DutchcraftModElements;
+
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
 @DutchcraftModElements.ModElement.Tag
 public class CrowEntity extends DutchcraftModElements.ModElement {
@@ -55,7 +62,7 @@ public class CrowEntity extends DutchcraftModElements.ModElement {
 			.size(0.4f, 0.7f)).build("crow").setRegistryName("crow");
 
 	public CrowEntity(DutchcraftModElements instance) {
-		super(instance, 30);
+		super(instance, 31);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new CrowRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -140,6 +147,21 @@ public class CrowEntity extends DutchcraftModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dutchcraft:entity.crow.ambient"));
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+
+			CrowEntityDiesProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override

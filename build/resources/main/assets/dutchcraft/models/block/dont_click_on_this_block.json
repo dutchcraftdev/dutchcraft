@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/dont_click_on_this_block",
+    "up": "dutchcraft:blocks/dont_click_on_this_block",
+    "north": "dutchcraft:blocks/dont_click_on_this_block",
+    "east": "dutchcraft:blocks/dont_click_on_this_block",
+    "south": "dutchcraft:blocks/dont_click_on_this_block",
+    "west": "dutchcraft:blocks/dont_click_on_this_block",
+    "particle": "dutchcraft:blocks/dont_click_on_this_block"
+  }
+}

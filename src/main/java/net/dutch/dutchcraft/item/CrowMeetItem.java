@@ -18,7 +18,7 @@ public class CrowMeetItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public CrowMeetItem(DutchcraftModElements instance) {
-		super(instance, 23);
+		super(instance, 24);
 	}
 
 	@Override

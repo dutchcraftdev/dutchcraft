@@ -52,7 +52,7 @@ public class CheapExplosiveItem extends DutchcraftModElements.ModElement {
 			.size(0.5f, 0.5f)).build("projectile_cheap_explosive").setRegistryName("projectile_cheap_explosive");
 
 	public CheapExplosiveItem(DutchcraftModElements instance) {
-		super(instance, 11);
+		super(instance, 12);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new CheapExplosiveRenderer.ModelRegisterHandler());
 	}
 

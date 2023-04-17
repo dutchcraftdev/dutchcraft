@@ -17,7 +17,7 @@ public class DryKeysItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public DryKeysItem(DutchcraftModElements instance) {
-		super(instance, 17);
+		super(instance, 18);
 	}
 
 	@Override

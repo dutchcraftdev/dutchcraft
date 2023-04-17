@@ -70,7 +70,7 @@ public class CheapExplosiveRangedItemUsedProcedure {
 						((PlayerEntity) entity).container.func_234641_j_());
 			}
 		}
-		if (MathHelper.nextDouble(new Random(), 1, 12) == 2) {
+		if (MathHelper.nextInt(new Random(), 1, 12) == 2) {
 			if (world instanceof World && !((World) world).isRemote) {
 				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 2, Explosion.Mode.BREAK);
 			}

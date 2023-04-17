@@ -58,7 +58,7 @@ public class SensitiveCreeperEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.7f)).build("sensitive_creeper").setRegistryName("sensitive_creeper");
 
 	public SensitiveCreeperEntity(DutchcraftModElements instance) {
-		super(instance, 29);
+		super(instance, 30);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SensitiveCreeperRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

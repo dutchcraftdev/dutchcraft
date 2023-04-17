@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dutchcraft:block/dont_click_on_this_block"
+    }
+  }
+}
