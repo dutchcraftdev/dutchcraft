@@ -6,9 +6,7 @@
     "texture": "cheap_explosive",
     "customModelName": "Normal",
     "name": "Cheap Explosive",
-    "specialInfo": [
-      "WARNING: item is very broken"
-    ],
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:DUTCHCRAFT"
     },

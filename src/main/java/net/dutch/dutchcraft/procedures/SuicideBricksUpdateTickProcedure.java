@@ -41,7 +41,7 @@ public class SuicideBricksUpdateTickProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		if (world.getWorldInfo().getGameRulesInstance().getBoolean(DoSuicideBrickExplosionsGameRule.gamerule) == true) {
-			if (MathHelper.nextInt(new Random(), 1, 24000) == 2) {
+			if (MathHelper.nextInt(new Random(), 1, 200) == 2) {
 				world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
 				if (world instanceof World && !((World) world).isRemote) {
 					((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 2, Explosion.Mode.BREAK);

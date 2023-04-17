@@ -71,11 +71,11 @@ public class CheapExplosiveRangedItemUsedProcedure {
 			}
 		}
 		if (MathHelper.nextDouble(new Random(), 1, 12) == 2) {
-			if (!entity.world.isRemote())
-				entity.remove();
 			if (world instanceof World && !((World) world).isRemote) {
 				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 2, Explosion.Mode.BREAK);
 			}
+			if (!entity.world.isRemote())
+				entity.remove();
 		}
 	}
 }

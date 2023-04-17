@@ -10,8 +10,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.BlockRayTraceResult;
@@ -32,7 +30,6 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.client.util.ITooltipFlag;
 
 import net.dutch.dutchcraft.procedures.CheapExplosiveRangedItemUsedProcedure;
 import net.dutch.dutchcraft.procedures.CheapExplosiveProjectileHitsBlockProcedure;
@@ -43,7 +40,6 @@ import net.dutch.dutchcraft.DutchcraftModElements;
 import java.util.stream.Stream;
 import java.util.Random;
 import java.util.Map;
-import java.util.List;
 import java.util.HashMap;
 import java.util.AbstractMap;
 
@@ -76,12 +72,6 @@ public class CheapExplosiveItem extends DutchcraftModElements.ModElement {
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			entity.setActiveHand(hand);
 			return new ActionResult(ActionResultType.SUCCESS, entity.getHeldItem(hand));
-		}
-
-		@Override
-		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("WARNING: item is very broken"));
 		}
 
 		@Override

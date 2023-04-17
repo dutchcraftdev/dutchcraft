@@ -4,7 +4,6 @@ package net.dutch.dutchcraft.block;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
@@ -45,7 +44,7 @@ public class SuicideBricksBlock extends DutchcraftModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 12f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 12f).setLightLevel(s -> 0).tickRandomly());
 			setRegistryName("suicide_bricks");
 		}
 
@@ -63,15 +62,6 @@ public class SuicideBricksBlock extends DutchcraftModElements.ModElement {
 		}
 
 		@Override
-		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(blockstate, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(pos, this, 1);
-		}
-
-		@Override
 		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
 			super.tick(blockstate, world, pos, random);
 			int x = pos.getX();
@@ -82,7 +72,6 @@ public class SuicideBricksBlock extends DutchcraftModElements.ModElement {
 					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
 							new AbstractMap.SimpleEntry<>("z", z))
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-			world.getPendingBlockTicks().scheduleTick(pos, this, 1);
 		}
 	}
 }

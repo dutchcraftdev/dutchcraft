@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:rugby_block"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:rugby",
+    "count": 9
+  }
+}

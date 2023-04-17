@@ -517,6 +517,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -680,6 +684,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cheap_explosive_recipe"
+    },
+    {
+      "name": "SocorBlockToSocor",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "socor_block_to_socor"
+    },
+    {
+      "name": "RugbyBlockToRugby",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rugby_block_to_rugby"
     }
   ],
   "variable_elements": [],

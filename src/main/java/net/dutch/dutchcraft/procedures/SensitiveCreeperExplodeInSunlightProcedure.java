@@ -46,7 +46,7 @@ public class SensitiveCreeperExplodeInSunlightProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (world.getLight(new BlockPos(x, y + 1, z)) > 13) {
-			if (MathHelper.nextInt(new Random(), 1, 24000) == 2) {
+			if (MathHelper.nextInt(new Random(), 1, 600) == 2) {
 				if (!entity.world.isRemote())
 					entity.remove();
 				if (world instanceof World && !((World) world).isRemote) {
