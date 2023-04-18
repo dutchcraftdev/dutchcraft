@@ -11,7 +11,7 @@
     {
       "name": "DUTCHCRAFT",
       "type": "tab",
-      "sortid": 42,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dutchcraft"
@@ -19,7 +19,7 @@
     {
       "name": "Logo",
       "type": "item",
-      "sortid": 43,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "logo"
@@ -59,7 +59,7 @@
     {
       "name": "SocorBlockRecipeStandard",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "socor_block_recipe_standard"
@@ -67,7 +67,7 @@
     {
       "name": "RugbyBlockRecipeStandard",
       "type": "recipe",
-      "sortid": 45,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rugby_block_recipe_standard"
@@ -75,7 +75,7 @@
     {
       "name": "RugbyItemStandardRecipe",
       "type": "recipe",
-      "sortid": 46,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rugby_item_standard_recipe"
@@ -83,7 +83,7 @@
     {
       "name": "LucasOReiley",
       "type": "livingentity",
-      "sortid": 36,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley"
@@ -91,7 +91,7 @@
     {
       "name": "LucasOReileyBone",
       "type": "item",
-      "sortid": 28,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_bone"
@@ -107,7 +107,7 @@
     {
       "name": "LucasOReileyDrops",
       "type": "loottable",
-      "sortid": 47,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_drops"
@@ -123,7 +123,7 @@
     {
       "name": "LucasOReileyBoneMealRecipeStandard",
       "type": "recipe",
-      "sortid": 48,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_bone_meal_recipe_standard"
@@ -147,7 +147,7 @@
     {
       "name": "CrystalBlockToCrystal",
       "type": "recipe",
-      "sortid": 49,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_block_to_crystal"
@@ -155,7 +155,7 @@
     {
       "name": "CrystalToCrystalBlock",
       "type": "recipe",
-      "sortid": 50,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_to_crystal_block"
@@ -163,7 +163,7 @@
     {
       "name": "LucasOReileyBoneMealRightclickedOnBlock",
       "type": "procedure",
-      "sortid": 51,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_bone_meal_rightclicked_on_block",
@@ -195,7 +195,7 @@
     {
       "name": "LucasOReileyMeat",
       "type": "item",
-      "sortid": 32,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_meat"
@@ -203,7 +203,7 @@
     {
       "name": "LucasOReileyMeatCooked",
       "type": "item",
-      "sortid": 33,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_meat_cooked"
@@ -211,7 +211,7 @@
     {
       "name": "LucasOReileyCookedMeatRecipe",
       "type": "recipe",
-      "sortid": 52,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lucas_o_reiley_cooked_meat_recipe"
@@ -219,7 +219,7 @@
     {
       "name": "DoSuicideBrickExplosions",
       "type": "gamerule",
-      "sortid": 53,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "doSuicideBrickExplosions",
@@ -238,7 +238,7 @@
     {
       "name": "SuicideBricksUpdateTick",
       "type": "procedure",
-      "sortid": 54,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suicide_bricks_update_tick",
@@ -266,7 +266,7 @@
     {
       "name": "SuicideBricksRecipe",
       "type": "recipe",
-      "sortid": 55,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suicide_bricks_recipe"
@@ -274,7 +274,7 @@
     {
       "name": "SuicideHouse",
       "type": "structure",
-      "sortid": 56,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suicide_house"
@@ -282,7 +282,7 @@
     {
       "name": "ZombieTwoOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zombie_two_on_initial_entity_spawn",
@@ -298,7 +298,7 @@
     {
       "name": "ZombieTwo",
       "type": "livingentity",
-      "sortid": 35,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zombie_two"
@@ -306,7 +306,7 @@
     {
       "name": "Antidepressants",
       "type": "item",
-      "sortid": 27,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antidepressants"
@@ -314,7 +314,7 @@
     {
       "name": "AntidepressantsRecipe",
       "type": "recipe",
-      "sortid": 58,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "antidepressants_recipe"
@@ -330,7 +330,7 @@
     {
       "name": "HostileBricksEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 59,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hostile_bricks_entity_walks_on_the_block",
@@ -358,7 +358,7 @@
     {
       "name": "HostileBricksRecipe",
       "type": "recipe",
-      "sortid": 60,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hostile_bricks_recipe"
@@ -366,7 +366,7 @@
     {
       "name": "SensitiveCreeperExplodeInSunlight",
       "type": "procedure",
-      "sortid": 61,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sensitive_creeper_explode_in_sunlight",
@@ -398,7 +398,7 @@
     {
       "name": "SensitiveCreeperRightClickedOnEntity",
       "type": "procedure",
-      "sortid": 62,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sensitive_creeper_right_clicked_on_entity",
@@ -430,7 +430,7 @@
     {
       "name": "SensitiveCreeper",
       "type": "livingentity",
-      "sortid": 37,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sensitive_creeper"
@@ -438,7 +438,7 @@
     {
       "name": "Crow",
       "type": "livingentity",
-      "sortid": 38,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crow"
@@ -462,7 +462,7 @@
     {
       "name": "Keyboard",
       "type": "item",
-      "sortid": 26,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "keyboard"
@@ -470,7 +470,7 @@
     {
       "name": "DryKeysToKeyboard",
       "type": "recipe",
-      "sortid": 63,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dry_keys_to_keyboard"
@@ -478,7 +478,7 @@
     {
       "name": "CrowMeet",
       "type": "item",
-      "sortid": 30,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crow_meet"
@@ -486,7 +486,7 @@
     {
       "name": "CrowMeetCooked",
       "type": "item",
-      "sortid": 31,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crow_meet_cooked"
@@ -494,7 +494,7 @@
     {
       "name": "CrowDrops",
       "type": "loottable",
-      "sortid": 64,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crow_drops"
@@ -510,7 +510,7 @@
     {
       "name": "UnstableBricksBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 65,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "unstable_bricks_block_destroyed_by_player",
@@ -550,7 +550,7 @@
     {
       "name": "SlingshotRecipe",
       "type": "recipe",
-      "sortid": 66,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slingshot_recipe"
@@ -566,7 +566,7 @@
     {
       "name": "AutoSlingshotRecipe",
       "type": "recipe",
-      "sortid": 67,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "auto_slingshot_recipe"
@@ -574,7 +574,7 @@
     {
       "name": "Homeless",
       "type": "livingentity",
-      "sortid": 39,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "homeless"
@@ -604,7 +604,7 @@
     {
       "name": "HomelessLoottable",
       "type": "loottable",
-      "sortid": 68,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "homeless_loottable"
@@ -620,7 +620,7 @@
     {
       "name": "CheapExplosiveProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 69,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cheap_explosive_projectile_hits_block",
@@ -648,7 +648,7 @@
     {
       "name": "CheapExplosiveRangedItemUsed",
       "type": "procedure",
-      "sortid": 70,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cheap_explosive_ranged_item_used",
@@ -680,7 +680,7 @@
     {
       "name": "CheapExplosiveRecipe",
       "type": "recipe",
-      "sortid": 71,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cheap_explosive_recipe"
@@ -688,7 +688,7 @@
     {
       "name": "SocorBlockToSocor",
       "type": "recipe",
-      "sortid": 72,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "socor_block_to_socor"
@@ -696,7 +696,7 @@
     {
       "name": "RugbyBlockToRugby",
       "type": "recipe",
-      "sortid": 73,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rugby_block_to_rugby"
@@ -704,7 +704,7 @@
     {
       "name": "IdiotGUI",
       "type": "gui",
-      "sortid": 74,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "idiot_gui"
@@ -720,7 +720,7 @@
     {
       "name": "DontClickOnThisBlockOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dont_click_on_this_block_on_block_right_clicked",
@@ -752,7 +752,7 @@
     {
       "name": "CrowEntityDies",
       "type": "procedure",
-      "sortid": 76,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crow_entity_dies",
@@ -780,7 +780,7 @@
     {
       "name": "CookCrowMeet",
       "type": "recipe",
-      "sortid": 77,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cook_crow_meet"
@@ -788,7 +788,7 @@
     {
       "name": "ClayGeneratorOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 78,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "clay_generator_on_block_right_clicked",
@@ -840,7 +840,7 @@
     {
       "name": "JKIdiotGui",
       "type": "gui",
-      "sortid": 79,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jk_idiot_gui"
@@ -848,7 +848,7 @@
     {
       "name": "LegoIndianaJonesXbox360PlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 80,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lego_indiana_jones_xbox_360_player_finishes_using_item",
@@ -880,7 +880,7 @@
     {
       "name": "LegoIndianaJonesXbox360",
       "type": "item",
-      "sortid": 34,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lego_indiana_jones_xbox_360"
@@ -888,7 +888,7 @@
     {
       "name": "LouisianaJones",
       "type": "livingentity",
-      "sortid": 40,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "louisiana_jones"
@@ -896,7 +896,7 @@
     {
       "name": "LouisianaJonesBlockOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 81,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "louisiana_jones_block_on_block_right_clicked",
@@ -924,7 +924,7 @@
     {
       "name": "CheapExplosivesSpawnInDungeon",
       "type": "loottable",
-      "sortid": 82,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cheap_explosives_spawn_in_dungeon"
@@ -940,7 +940,7 @@
     {
       "name": "StickyKeysPopUp",
       "type": "gui",
-      "sortid": 83,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sticky_keys_pop_up"
@@ -948,7 +948,7 @@
     {
       "name": "KeyboardRightclicked",
       "type": "procedure",
-      "sortid": 84,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "keyboard_rightclicked",
@@ -980,7 +980,7 @@
     {
       "name": "Orange",
       "type": "item",
-      "sortid": 29,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange"
@@ -988,7 +988,7 @@
     {
       "name": "OrangeLeavesLoot",
       "type": "loottable",
-      "sortid": 85,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_leaves_loot"
@@ -1004,7 +1004,7 @@
     {
       "name": "OrangeBiome",
       "type": "biome",
-      "sortid": 86,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_biome"
@@ -1012,7 +1012,7 @@
     {
       "name": "OrangeMan",
       "type": "livingentity",
-      "sortid": 41,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_man"
@@ -1020,7 +1020,7 @@
     {
       "name": "OrangeLeavesBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 87,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_leaves_block_destroyed_by_player",
@@ -1048,10 +1048,130 @@
     {
       "name": "OrangeManDrops",
       "type": "loottable",
-      "sortid": 88,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_man_drops"
+    },
+    {
+      "name": "SpongeChickenOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sponge_chicken_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpongeingOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spongeing_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spongeing",
+      "type": "potioneffect",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spongeing"
+    },
+    {
+      "name": "SpongeChickenEntityDies",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sponge_chicken_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpongeChicken",
+      "type": "livingentity",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sponge_chicken"
+    },
+    {
+      "name": "SpongeShard",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sponge_shard"
+    },
+    {
+      "name": "SpongeChickenDROPS",
+      "type": "loottable",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sponge_chicken_drops"
+    },
+    {
+      "name": "SpongeShardToSponge",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sponge_shard_to_sponge"
+    },
+    {
+      "name": "SpongeToSpongeShard",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sponge_to_sponge_shard"
     }
   ],
   "variable_elements": [],
@@ -1094,17 +1214,20 @@
       "item.dutchcraft.cheap_explosive": "Cheap Explosive",
       "item.dutchcraft.socor": "Socor",
       "item.dutchcraft.lucas_o_reiley_bone_meal": "Lucas O\u0027Reiley Bone Meal",
+      "item.dutchcraft.sponge_shard": "Sponge Shard",
       "block.dutchcraft.clay_generator": "Clay Generator",
       "block.dutchcraft.socor_ore": "Socor Ore",
       "item.dutchcraft.auto_slingshot": "Autoslingshot",
       "item.dutchcraft.lucas_o_reiley_bone": "Lucas O\u0027Reiley Bone",
       "item.dutchcraft.sensitive_creeper_spawn_egg": "Sensitive Creeper Spawn Egg",
       "item.dutchcraft.homeless_spawn_egg": "Homeless Person Spawn Egg",
+      "effect.spongeing": "Sponging",
       "gamerule.doSuicideBrickExplosions.description": "Whether Suicide Bricks commit suicide",
       "item.dutchcraft.bib_chestplate": "Bib",
       "item.dutchcraft.antidepressants": "Antidepressants",
       "item.dutchcraft.lucas_o_reiley_spawn_egg": "Lucas O\u0027Reiley Spawn Egg",
       "entity.dutchcraft.orange_man": "Orange Man",
+      "item.dutchcraft.sponge_chicken_spawn_egg": "Sponge Chicken Spawn Egg",
       "item.dutchcraft.slingshot": "Slingshot",
       "item.dutchcraft.bib_leggings": "Bib Leggings",
       "block.dutchcraft.orange_leaves": "Orange Leaves",
@@ -1142,6 +1265,7 @@
       "item.dutchcraft.crow_meet_cooked": "Cooked Crow Meet",
       "item.dutchcraft.crow_meet": "Crow Meet",
       "item.dutchcraft.bib_boots": "Bib Boots",
+      "entity.dutchcraft.sponge_chicken": "Sponge Chicken",
       "item.dutchcraft.bib_helmet": "Bib",
       "item.dutchcraft.crystal": "Crystal Item",
       "block.dutchcraft.socor_block": "Block of Socor",

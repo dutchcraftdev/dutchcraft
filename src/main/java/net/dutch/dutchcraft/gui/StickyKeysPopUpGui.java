@@ -34,7 +34,7 @@ public class StickyKeysPopUpGui extends DutchcraftModElements.ModElement {
 	private static ContainerType<GuiContainerMod> containerType = null;
 
 	public StickyKeysPopUpGui(DutchcraftModElements instance) {
-		super(instance, 83);
+		super(instance, 85);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

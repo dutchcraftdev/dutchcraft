@@ -12,7 +12,6 @@ import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
@@ -30,14 +29,11 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.dutch.dutchcraft.itemgroup.DUTCHCRAFTItemGroup;
 import net.dutch.dutchcraft.entity.renderer.OrangeManRenderer;
 import net.dutch.dutchcraft.DutchcraftModElements;
-
-import java.util.Random;
 
 @DutchcraftModElements.ModElement.Tag
 public class OrangeManEntity extends DutchcraftModElements.ModElement {
@@ -46,7 +42,7 @@ public class OrangeManEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.8f)).build("orange_man").setRegistryName("orange_man");
 
 	public OrangeManEntity(DutchcraftModElements instance) {
-		super(instance, 41);
+		super(instance, 42);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new OrangeManRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
@@ -120,26 +116,6 @@ public class OrangeManEntity extends DutchcraftModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
-		}
-
-		public void livingTick() {
-			super.livingTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Random random = this.rand;
-			Entity entity = this;
-			if (true)
-				for (int l = 0; l < 4; ++l) {
-					double d0 = (x + random.nextFloat());
-					double d1 = (y + random.nextFloat());
-					double d2 = (z + random.nextFloat());
-					int i1 = random.nextInt(2) * 2 - 1;
-					double d3 = (random.nextFloat() - 0.5D) * 0.5D;
-					double d4 = (random.nextFloat() - 0.5D) * 0.5D;
-					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
-					world.addParticle(ParticleTypes.EXPLOSION, d0, d1, d2, d3, d4, d5);
-				}
 		}
 	}
 }
