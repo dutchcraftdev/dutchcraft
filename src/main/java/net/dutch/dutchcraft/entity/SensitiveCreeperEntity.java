@@ -58,7 +58,7 @@ public class SensitiveCreeperEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.7f)).build("sensitive_creeper").setRegistryName("sensitive_creeper");
 
 	public SensitiveCreeperEntity(DutchcraftModElements instance) {
-		super(instance, 30);
+		super(instance, 34);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SensitiveCreeperRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -86,7 +86,7 @@ public class SensitiveCreeperEntity extends DutchcraftModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.1);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);

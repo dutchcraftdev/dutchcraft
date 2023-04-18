@@ -8,5 +8,14 @@
         "stream": false
       }
     ]
+  },
+  "ambient.whoyouthinkiam": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "dutchcraft:whoyouthinkiam",
+        "stream": false
+      }
+    ]
   }
 }

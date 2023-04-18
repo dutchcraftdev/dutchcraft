@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/clay_generator",
+    "up": "dutchcraft:blocks/clay_generator_top",
+    "north": "dutchcraft:blocks/clay_generator",
+    "east": "dutchcraft:blocks/clay_generator",
+    "south": "dutchcraft:blocks/clay_generator",
+    "west": "dutchcraft:blocks/clay_generator",
+    "particle": "dutchcraft:blocks/clay_generator"
+  }
+}

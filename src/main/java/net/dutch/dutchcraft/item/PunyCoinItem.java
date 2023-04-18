@@ -17,7 +17,7 @@ public class PunyCoinItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public PunyCoinItem(DutchcraftModElements instance) {
-		super(instance, 20);
+		super(instance, 23);
 	}
 
 	@Override

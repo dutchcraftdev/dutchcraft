@@ -69,7 +69,31 @@ public class DontClickOnThisBlockOnBlockRightClickedProcedure {
 			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Nah you're good, don't try that again tho"), (false));
 			}
-			world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private IWorld world;
+
+				public void start(IWorld world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
+				}
+
+				private void run() {
+					world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(world, (int) 1);
 		} else {
 			{
 				Entity _ent = entity;

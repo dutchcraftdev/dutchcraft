@@ -18,7 +18,7 @@ public class LucasOReileyMeatItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public LucasOReileyMeatItem(DutchcraftModElements instance) {
-		super(instance, 26);
+		super(instance, 29);
 	}
 
 	@Override
