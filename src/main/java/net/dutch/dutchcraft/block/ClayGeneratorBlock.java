@@ -38,7 +38,7 @@ public class ClayGeneratorBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public ClayGeneratorBlock(DutchcraftModElements instance) {
-		super(instance, 9);
+		super(instance, 11);
 	}
 
 	@Override

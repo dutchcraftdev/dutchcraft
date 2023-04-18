@@ -9,11 +9,32 @@
       }
     ]
   },
+  "block.stickykeys": {
+    "category": "block",
+    "subtitle": "subtitles.block.stickykeys",
+    "sounds": [
+      {
+        "name": "dutchcraft:sticky_keys",
+        "stream": false
+      }
+    ]
+  },
   "ambient.whoyouthinkiam": {
     "category": "neutral",
+    "subtitle": "subtitles.ambient.whoyouthinkiam",
     "sounds": [
       {
         "name": "dutchcraft:whoyouthinkiam",
+        "stream": false
+      }
+    ]
+  },
+  "keyboardclicking": {
+    "category": "neutral",
+    "subtitle": "subtitles.keyboardclicking",
+    "sounds": [
+      {
+        "name": "dutchcraft:keyboard_clicking",
         "stream": false
       }
     ]

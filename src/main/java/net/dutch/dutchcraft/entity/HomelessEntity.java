@@ -52,7 +52,7 @@ public class HomelessEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.95f)).build("homeless").setRegistryName("homeless");
 
 	public HomelessEntity(DutchcraftModElements instance) {
-		super(instance, 36);
+		super(instance, 39);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new HomelessRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

@@ -32,7 +32,7 @@ public class CrystalBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public CrystalBlock(DutchcraftModElements instance) {
-		super(instance, 3);
+		super(instance, 4);
 	}
 
 	@Override

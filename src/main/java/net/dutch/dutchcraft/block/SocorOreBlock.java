@@ -49,7 +49,7 @@ public class SocorOreBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public SocorOreBlock(DutchcraftModElements instance) {
-		super(instance, 4);
+		super(instance, 5);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

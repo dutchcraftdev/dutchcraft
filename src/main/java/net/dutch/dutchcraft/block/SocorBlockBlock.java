@@ -27,7 +27,7 @@ public class SocorBlockBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public SocorBlockBlock(DutchcraftModElements instance) {
-		super(instance, 2);
+		super(instance, 3);
 	}
 
 	@Override

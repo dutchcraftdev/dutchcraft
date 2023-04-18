@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/orange_leaves",
+    "up": "dutchcraft:blocks/orange_leaves",
+    "north": "dutchcraft:blocks/orange_leaves",
+    "east": "dutchcraft:blocks/orange_leaves",
+    "south": "dutchcraft:blocks/orange_leaves",
+    "west": "dutchcraft:blocks/orange_leaves",
+    "particle": "dutchcraft:blocks/orange_leaves"
+  }
+}

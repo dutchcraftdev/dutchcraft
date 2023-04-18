@@ -6,13 +6,7 @@
     "texture": "cheap_explosive",
     "customModelName": "Normal",
     "name": "Cheap Explosive",
-    "specialInfo": [
-      "WARNING: barely functional",
-      "dont use",
-      "like actually it",
-      "breaks the game",
-      "for some reason"
-    ],
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:DUTCHCRAFT"
     },

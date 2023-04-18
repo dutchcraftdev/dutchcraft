@@ -37,7 +37,7 @@ public class DontClickOnThisBlockBlock extends DutchcraftModElements.ModElement 
 	public static final Block block = null;
 
 	public DontClickOnThisBlockBlock(DutchcraftModElements instance) {
-		super(instance, 8);
+		super(instance, 10);
 	}
 
 	@Override

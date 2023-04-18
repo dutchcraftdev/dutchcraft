@@ -31,7 +31,7 @@ public class BibItem extends DutchcraftModElements.ModElement {
 	public static final Item boots = null;
 
 	public BibItem(DutchcraftModElements instance) {
-		super(instance, 16);
+		super(instance, 18);
 	}
 
 	@Override

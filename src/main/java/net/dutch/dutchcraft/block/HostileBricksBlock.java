@@ -33,7 +33,7 @@ public class HostileBricksBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public HostileBricksBlock(DutchcraftModElements instance) {
-		super(instance, 6);
+		super(instance, 7);
 	}
 
 	@Override

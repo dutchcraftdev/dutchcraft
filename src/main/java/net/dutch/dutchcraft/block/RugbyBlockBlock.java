@@ -26,7 +26,7 @@ public class RugbyBlockBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public RugbyBlockBlock(DutchcraftModElements instance) {
-		super(instance, 1);
+		super(instance, 2);
 	}
 
 	@Override

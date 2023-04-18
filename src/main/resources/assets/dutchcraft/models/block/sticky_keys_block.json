@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/sticky_keys",
+    "up": "dutchcraft:blocks/sticky_keys",
+    "north": "dutchcraft:blocks/sticky_keys",
+    "east": "dutchcraft:blocks/sticky_keys",
+    "south": "dutchcraft:blocks/sticky_keys",
+    "west": "dutchcraft:blocks/sticky_keys",
+    "particle": "dutchcraft:blocks/sticky_keys"
+  }
+}

@@ -14,7 +14,7 @@ public class DoSuicideBrickExplosionsGameRule extends DutchcraftModElements.ModE
 			create(true));
 
 	public DoSuicideBrickExplosionsGameRule(DutchcraftModElements instance) {
-		super(instance, 49);
+		super(instance, 53);
 	}
 
 	public static GameRules.RuleType<GameRules.BooleanValue> create(boolean defaultValue) {
