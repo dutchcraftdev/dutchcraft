@@ -1,9 +1,5 @@
 package net.dutch.dutchcraft.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
@@ -49,45 +45,22 @@ public class LouisianaJonesBlockOnBlockRightClickedProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private IWorld world;
-
-			public void start(IWorld world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
+		if (!world.isRemote()) {
+			for (int index0 = 0; index0 < (int) (20); index0++) {
+				if (world instanceof ServerWorld) {
+					Entity entityToSpawn = new LouisianaJonesEntity.CustomEntity(LouisianaJonesEntity.entity, (World) world);
+					entityToSpawn.setLocationAndAngles((x + MathHelper.nextInt(new Random(), -64, 64)), 100,
+							(z + MathHelper.nextInt(new Random(), -64, 64)), (float) 0, (float) 0);
+					entityToSpawn.setRenderYawOffset((float) 0);
+					entityToSpawn.setRotationYawHead((float) 0);
+					entityToSpawn.setMotion(0, 0, 0);
+					if (entityToSpawn instanceof MobEntity)
+						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+					world.addEntity(entityToSpawn);
 				}
 			}
-
-			private void run() {
-				for (int index0 = 0; index0 < (int) (20); index0++) {
-					if (world instanceof ServerWorld) {
-						Entity entityToSpawn = new LouisianaJonesEntity.CustomEntity(LouisianaJonesEntity.entity, (World) world);
-						entityToSpawn.setLocationAndAngles((x + MathHelper.nextInt(new Random(), -64, 64)), 100,
-								(z + MathHelper.nextInt(new Random(), -64, 64)), (float) 0, (float) 0);
-						entityToSpawn.setRenderYawOffset((float) 0);
-						entityToSpawn.setRotationYawHead((float) 0);
-						entityToSpawn.setMotion(0, 0, 0);
-						if (entityToSpawn instanceof MobEntity)
-							((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
-									world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED, (ILivingEntityData) null,
-									(CompoundNBT) null);
-						world.addEntity(entityToSpawn);
-					}
-				}
-				world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, (int) 1);
+			world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
+		}
 	}
 }

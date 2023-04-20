@@ -21,7 +21,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Item;
-import net.minecraft.entity.passive.ChickenEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
@@ -33,6 +32,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.BlockState;
@@ -70,7 +70,7 @@ public class SpongeChickenEntity extends DutchcraftModElements.ModElement {
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 3, 2, 8));
+		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 1, 2, 8));
 	}
 
 	@Override
@@ -94,7 +94,7 @@ public class SpongeChickenEntity extends DutchcraftModElements.ModElement {
 		}
 	}
 
-	public static class CustomEntity extends ChickenEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}

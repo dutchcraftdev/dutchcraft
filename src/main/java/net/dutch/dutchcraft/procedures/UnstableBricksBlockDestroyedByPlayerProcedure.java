@@ -50,21 +50,23 @@ public class UnstableBricksBlockDestroyedByPlayerProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
-		if (new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayerEntity) {
-					return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
-				} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
-					NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
-							.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
-					return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+		if (!world.isRemote()) {
+			if (new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+					}
+					return false;
 				}
-				return false;
-			}
-		}.checkGamemode(entity)) {
-			world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
-			if (world instanceof World && !((World) world).isRemote) {
-				((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 3, Explosion.Mode.BREAK);
+			}.checkGamemode(entity)) {
+				world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
+				if (world instanceof World && !((World) world).isRemote) {
+					((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 3, Explosion.Mode.BREAK);
+				}
 			}
 		}
 	}

@@ -51,24 +51,26 @@ public class LucasOReileyBoneMealRightclickedOnBlockProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.GRASS_BLOCK) {
-			world.setBlockState(new BlockPos(x, y, z), CrystalBlock.block.getDefaultState(), 3);
-			if (new Object() {
-				public boolean checkGamemode(Entity _ent) {
-					if (_ent instanceof ServerPlayerEntity) {
-						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
-					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
-						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
-								.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
-						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+		if (!world.isRemote()) {
+			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.GRASS_BLOCK) {
+				world.setBlockState(new BlockPos(x, y, z), CrystalBlock.block.getDefaultState(), 3);
+				if (new Object() {
+					public boolean checkGamemode(Entity _ent) {
+						if (_ent instanceof ServerPlayerEntity) {
+							return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+						} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
+							NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+									.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+							return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+						}
+						return false;
 					}
-					return false;
-				}
-			}.checkGamemode(entity)) {
-				if (entity instanceof PlayerEntity) {
-					ItemStack _stktoremove = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
-					((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-							((PlayerEntity) entity).container.func_234641_j_());
+				}.checkGamemode(entity)) {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _stktoremove = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
+						((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+								((PlayerEntity) entity).container.func_234641_j_());
+					}
 				}
 			}
 		}

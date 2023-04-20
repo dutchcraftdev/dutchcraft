@@ -106,7 +106,7 @@
       "name": "SpongeChickenOnEntityTickUpdate"
     },
     "hasAI": true,
-    "aiBase": "Chicken",
+    "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
@@ -118,7 +118,7 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": false,
-    "spawningProbability": 3,
+    "spawningProbability": 1,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 2,
     "maxNumberOfMobsPerGroup": 8,

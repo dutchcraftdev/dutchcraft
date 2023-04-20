@@ -65,83 +65,85 @@ public class DontClickOnThisBlockOnBlockRightClickedProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
-		if (MathHelper.nextInt(new Random(), 1, 10) == 2) {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Nah you're good, don't try that again tho"), (false));
-			}
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private IWorld world;
-
-				public void start(IWorld world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
+		if (!world.isRemote()) {
+			if (MathHelper.nextInt(new Random(), 1, 10) == 2) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Nah you're good, don't try that again tho"), (false));
 				}
+				new Object() {
+					private int ticks = 0;
+					private float waitTicks;
+					private IWorld world;
 
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
+					public void start(IWorld world, int waitTicks) {
+						this.waitTicks = waitTicks;
+						MinecraftForge.EVENT_BUS.register(this);
+						this.world = world;
 					}
-				}
 
-				private void run() {
-					world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, (int) 1);
-		} else {
-			{
-				Entity _ent = entity;
-				if (_ent instanceof ServerPlayerEntity) {
-					BlockPos _bpos = new BlockPos(x, y, z);
-					NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
-						@Override
-						public ITextComponent getDisplayName() {
-							return new StringTextComponent("IdiotGUI");
+					@SubscribeEvent
+					public void tick(TickEvent.ServerTickEvent event) {
+						if (event.phase == TickEvent.Phase.END) {
+							this.ticks += 1;
+							if (this.ticks >= this.waitTicks)
+								run();
 						}
+					}
 
-						@Override
-						public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-							return new IdiotGUIGui.GuiContainerMod(id, inventory, new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
+					private void run() {
+						world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
+						MinecraftForge.EVENT_BUS.unregister(this);
+					}
+				}.start(world, (int) 1);
+			} else {
+				{
+					Entity _ent = entity;
+					if (_ent instanceof ServerPlayerEntity) {
+						BlockPos _bpos = new BlockPos(x, y, z);
+						NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
+							@Override
+							public ITextComponent getDisplayName() {
+								return new StringTextComponent("IdiotGUI");
+							}
+
+							@Override
+							public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
+								return new IdiotGUIGui.GuiContainerMod(id, inventory, new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
+				}
+				if (entity instanceof LivingEntity)
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 100, (int) 5));
+				new Object() {
+					private int ticks = 0;
+					private float waitTicks;
+					private IWorld world;
+
+					public void start(IWorld world, int waitTicks) {
+						this.waitTicks = waitTicks;
+						MinecraftForge.EVENT_BUS.register(this);
+						this.world = world;
+					}
+
+					@SubscribeEvent
+					public void tick(TickEvent.ServerTickEvent event) {
+						if (event.phase == TickEvent.Phase.END) {
+							this.ticks += 1;
+							if (this.ticks >= this.waitTicks)
+								run();
 						}
-					}, _bpos);
-				}
+					}
+
+					private void run() {
+						world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
+						if (world instanceof World && !((World) world).isRemote) {
+							((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 8, Explosion.Mode.BREAK);
+						}
+						MinecraftForge.EVENT_BUS.unregister(this);
+					}
+				}.start(world, (int) 100);
 			}
-			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 100, (int) 5));
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private IWorld world;
-
-				public void start(IWorld world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
-					}
-				}
-
-				private void run() {
-					world.setBlockState(new BlockPos(x, y, z), Blocks.AIR.getDefaultState(), 3);
-					if (world instanceof World && !((World) world).isRemote) {
-						((World) world).createExplosion(null, (int) x, (int) y, (int) z, (float) 8, Explosion.Mode.BREAK);
-					}
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, (int) 100);
 		}
 	}
 }

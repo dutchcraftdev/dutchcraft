@@ -2,9 +2,6 @@ package net.dutch.dutchcraft.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
@@ -79,85 +76,61 @@ public class KeyboardRightclickedProcedure {
 					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dutchcraft:keyboardclicking")),
 					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
 		}
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private IWorld world;
-
-			public void start(IWorld world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
-				}
-			}
-
-			private void run() {
-				if (MathHelper.nextInt(new Random(), 1, 10) == 5) {
-					if (new Object() {
-						public boolean checkGamemode(Entity _ent) {
-							if (_ent instanceof ServerPlayerEntity) {
-								return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
-							} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
-								NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
-										.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
-								return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
-							}
-							return false;
-						}
-					}.checkGamemode(entity)) {
-						if (entity instanceof PlayerEntity) {
-							ItemStack _stktoremove = ((entity instanceof LivingEntity)
-									? ((LivingEntity) entity).getHeldItemMainhand()
-									: ItemStack.EMPTY);
-							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-									((PlayerEntity) entity).container.func_234641_j_());
-						}
-					}
-					{
-						Entity _ent = entity;
+		if (!world.isRemote()) {
+			if (MathHelper.nextInt(new Random(), 1, 10) == 5) {
+				if (new Object() {
+					public boolean checkGamemode(Entity _ent) {
 						if (_ent instanceof ServerPlayerEntity) {
-							BlockPos _bpos = new BlockPos(x, y, z);
-							NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
-								@Override
-								public ITextComponent getDisplayName() {
-									return new StringTextComponent("StickyKeysPopUp");
-								}
-
-								@Override
-								public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-									return new StickyKeysPopUpGui.GuiContainerMod(id, inventory,
-											new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
-								}
-							}, _bpos);
+							return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+						} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
+							NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+									.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+							return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
 						}
+						return false;
 					}
-					if (world instanceof World && !world.isRemote()) {
-						((World) world)
-								.playSound(null, new BlockPos(x, y, z),
-										(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-												.getValue(new ResourceLocation("dutchcraft:block.stickykeys")),
-										SoundCategory.NEUTRAL, (float) 1, (float) 1);
-					} else {
-						((World) world).playSound(x, y, z,
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-										.getValue(new ResourceLocation("dutchcraft:block.stickykeys")),
-								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-					}
-					for (int index0 = 0; index0 < (int) (MathHelper.nextInt(new Random(), 0, 5)); index0++) {
-						world.setBlockState(new BlockPos(MathHelper.nextInt(new Random(), -3, 3) + x, MathHelper.nextInt(new Random(), -3, 3) + y,
-								MathHelper.nextInt(new Random(), -3, 3) + z), StickyKeysBlockBlock.block.getDefaultState(), 3);
+				}.checkGamemode(entity)) {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _stktoremove = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
+						((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+								((PlayerEntity) entity).container.func_234641_j_());
 					}
 				}
-				MinecraftForge.EVENT_BUS.unregister(this);
+				{
+					Entity _ent = entity;
+					if (_ent instanceof ServerPlayerEntity) {
+						BlockPos _bpos = new BlockPos(x, y, z);
+						NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
+							@Override
+							public ITextComponent getDisplayName() {
+								return new StringTextComponent("StickyKeysPopUp");
+							}
+
+							@Override
+							public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
+								return new StickyKeysPopUpGui.GuiContainerMod(id, inventory,
+										new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
+				}
+				if (world instanceof World && !world.isRemote()) {
+					((World) world)
+							.playSound(null, new BlockPos(x, y, z),
+									(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+											.getValue(new ResourceLocation("dutchcraft:block.stickykeys")),
+									SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+									.getValue(new ResourceLocation("dutchcraft:block.stickykeys")),
+							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+				}
+				for (int index0 = 0; index0 < (int) (MathHelper.nextInt(new Random(), 0, 5)); index0++) {
+					world.setBlockState(new BlockPos(MathHelper.nextInt(new Random(), -3, 3) + x, MathHelper.nextInt(new Random(), -3, 3) + y,
+							MathHelper.nextInt(new Random(), -3, 3) + z), StickyKeysBlockBlock.block.getDefaultState(), 3);
+				}
 			}
-		}.start(world, (int) 0);
+		}
 	}
 }
