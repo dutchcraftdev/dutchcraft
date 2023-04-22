@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "dutchcraft:homeless_egg_fragments"
+    },
+    "3": {
+      "item": "dutchcraft:homeless_egg_fragments"
+    },
+    "4": {
+      "item": "minecraft:egg"
+    },
+    "5": {
+      "item": "dutchcraft:homeless_egg_fragments"
+    },
+    "7": {
+      "item": "dutchcraft:homeless_egg_fragments"
+    }
+  },
+  "result": {
+    "item": "dutchcraft:homeless_egg",
+    "count": 1
+  }
+}

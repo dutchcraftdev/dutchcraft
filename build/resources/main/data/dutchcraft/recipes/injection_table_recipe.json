@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:injection_needle"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "dutchcraft:gear"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "dutchcraft:gear"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "dutchcraft:gear"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:injector",
+    "count": 1
+  }
+}

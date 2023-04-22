@@ -38,5 +38,93 @@
         "stream": false
       }
     ]
+  },
+  "item.slingshot.hit": {
+    "category": "neutral",
+    "subtitle": "subtitles.item.slingshot.hit",
+    "sounds": [
+      {
+        "name": "dutchcraft:slingshot_hit",
+        "stream": false
+      }
+    ]
+  },
+  "music.londoninflames": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dutchcraft:london_in_flames",
+        "stream": true
+      }
+    ]
+  },
+  "block.injector": {
+    "category": "neutral",
+    "subtitle": "subtitles.block.injector",
+    "sounds": [
+      {
+        "name": "dutchcraft:injection",
+        "stream": false
+      }
+    ]
+  },
+  "block.clay_generator": {
+    "category": "block",
+    "subtitle": "subtitles.block.clay_generator",
+    "sounds": [
+      {
+        "name": "dutchcraft:sexy01",
+        "stream": false
+      },
+      {
+        "name": "dutchcraft:sexy02",
+        "stream": false
+      },
+      {
+        "name": "dutchcraft:sexy03",
+        "stream": false
+      },
+      {
+        "name": "dutchcraft:sexy04",
+        "stream": false
+      },
+      {
+        "name": "dutchcraft:sexy05",
+        "stream": false
+      },
+      {
+        "name": "dutchcraft:sexy06",
+        "stream": false
+      }
+    ]
+  },
+  "item.lorbone.scream": {
+    "category": "neutral",
+    "subtitle": "subtitles.item.lorbone.scream",
+    "sounds": [
+      {
+        "name": "dutchcraft:bone_scream",
+        "stream": false
+      }
+    ]
+  },
+  "block.crystal.shine": {
+    "category": "neutral",
+    "subtitle": "subtitles.block.crystal.shine",
+    "sounds": [
+      {
+        "name": "dutchcraft:shine",
+        "stream": false
+      }
+    ]
+  },
+  "item.bib.equip": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "dutchcraft:bib_equip",
+        "stream": false
+      }
+    ]
   }
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:coin_block"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:puny_coin",
+    "count": 9
+  }
+}

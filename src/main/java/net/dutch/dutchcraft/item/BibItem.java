@@ -31,7 +31,7 @@ public class BibItem extends DutchcraftModElements.ModElement {
 	public static final Item boots = null;
 
 	public BibItem(DutchcraftModElements instance) {
-		super(instance, 18);
+		super(instance, 30);
 	}
 
 	@Override
@@ -54,7 +54,7 @@ public class BibItem extends DutchcraftModElements.ModElement {
 
 			@Override
 			public net.minecraft.util.SoundEvent getSoundEvent() {
-				return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+				return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dutchcraft:item.bib.equip"));
 			}
 
 			@Override

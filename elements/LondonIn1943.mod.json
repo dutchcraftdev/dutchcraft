@@ -1,0 +1,23 @@
+{
+  "_fv": 33,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "London in 1941",
+    "icon": "london_in_1943.png",
+    "color": {
+      "value": -3355444,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": false,
+    "onStarted": {
+      "name": "LondonIn1943EffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "LondonIn1943OnEffectActiveTick"
+    }
+  }
+}

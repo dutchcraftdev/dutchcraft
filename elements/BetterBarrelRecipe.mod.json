@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TrappedOrangeBricks"
+      },
+      {
+        "value": "CUSTOM:TrappedOrangeBricks"
+      },
+      {
+        "value": "CUSTOM:TrappedOrangeBricks"
+      },
+      {
+        "value": "Blocks.BARREL"
+      },
+      {
+        "value": "CUSTOM:TrappedOrangeBricks"
+      },
+      {
+        "value": "CUSTOM:TrappedOrangeBricks"
+      },
+      {
+        "value": "CUSTOM:TrappedOrangeBricks"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BetterBarrel"
+    },
+    "name": "better_barrel_recipe",
+    "namespace": "mod"
+  }
+}

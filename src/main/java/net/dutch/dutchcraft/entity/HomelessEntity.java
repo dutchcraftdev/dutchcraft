@@ -30,6 +30,7 @@ import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.BreedGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.SpawnReason;
@@ -52,7 +53,7 @@ public class HomelessEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.95f)).build("homeless").setRegistryName("homeless");
 
 	public HomelessEntity(DutchcraftModElements instance) {
-		super(instance, 40);
+		super(instance, 62);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new HomelessRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -112,6 +113,7 @@ public class HomelessEntity extends DutchcraftModElements.ModElement {
 			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(3, new SwimGoal(this));
+			this.goalSelector.addGoal(4, new BreedGoal(this, 4));
 		}
 
 		@Override

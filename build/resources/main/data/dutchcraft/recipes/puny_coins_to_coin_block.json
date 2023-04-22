@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:puny_coin"
+    },
+    {
+      "item": "dutchcraft:puny_coin"
+    },
+    {
+      "item": "dutchcraft:puny_coin"
+    },
+    {
+      "item": "dutchcraft:puny_coin"
+    },
+    {
+      "item": "dutchcraft:puny_coin"
+    },
+    {
+      "item": "dutchcraft:puny_coin"
+    },
+    {
+      "item": "dutchcraft:puny_coin"
+    },
+    {
+      "item": "dutchcraft:puny_coin"
+    },
+    {
+      "item": "dutchcraft:puny_coin"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:coin_block",
+    "count": 1
+  }
+}

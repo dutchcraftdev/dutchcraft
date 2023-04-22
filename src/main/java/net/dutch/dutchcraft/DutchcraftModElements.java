@@ -54,6 +54,20 @@ public class DutchcraftModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "ambient.whoyouthinkiam")));
 		sounds.put(new ResourceLocation("dutchcraft", "keyboardclicking"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "keyboardclicking")));
+		sounds.put(new ResourceLocation("dutchcraft", "item.slingshot.hit"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "item.slingshot.hit")));
+		sounds.put(new ResourceLocation("dutchcraft", "music.londoninflames"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "music.londoninflames")));
+		sounds.put(new ResourceLocation("dutchcraft", "block.injector"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "block.injector")));
+		sounds.put(new ResourceLocation("dutchcraft", "block.clay_generator"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "block.clay_generator")));
+		sounds.put(new ResourceLocation("dutchcraft", "item.lorbone.scream"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "item.lorbone.scream")));
+		sounds.put(new ResourceLocation("dutchcraft", "block.crystal.shine"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "block.crystal.shine")));
+		sounds.put(new ResourceLocation("dutchcraft", "item.bib.equip"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "item.bib.equip")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("dutchcraft").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

@@ -1,10 +1,14 @@
 package net.dutch.dutchcraft.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.Explosion;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.block.Blocks;
 
 import net.dutch.dutchcraft.block.LouisianaJonesBlockBlock;
@@ -43,9 +47,31 @@ public class ClayGeneratorOnBlockRightClickedProcedure {
 		if (!world.isRemote()) {
 			if (MathHelper.nextInt(new Random(), 4, 9) != 8) {
 				if (MathHelper.nextInt(new Random(), 1, 12) != 8) {
+					if (world instanceof World && !world.isRemote()) {
+						((World) world).playSound(null, new BlockPos(x, y, z),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+										.getValue(new ResourceLocation("dutchcraft:block.clay_generator")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					} else {
+						((World) world).playSound(x, y, z,
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+										.getValue(new ResourceLocation("dutchcraft:block.clay_generator")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+					}
 					world.setBlockState(new BlockPos(x + MathHelper.nextInt(new Random(), -5, 5), y + MathHelper.nextInt(new Random(), 1, 10),
 							z + MathHelper.nextInt(new Random(), -5, 5)), Blocks.CLAY.getDefaultState(), 3);
 				} else {
+					if (world instanceof World && !world.isRemote()) {
+						((World) world).playSound(null, new BlockPos(x, y, z),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+										.getValue(new ResourceLocation("dutchcraft:block.clay_generator")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					} else {
+						((World) world).playSound(x, y, z,
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+										.getValue(new ResourceLocation("dutchcraft:block.clay_generator")),
+								SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+					}
 					world.setBlockState(new BlockPos(x + MathHelper.nextInt(new Random(), -5, 5), y + MathHelper.nextInt(new Random(), 1, 10),
 							z + MathHelper.nextInt(new Random(), -5, 5)), LouisianaJonesBlockBlock.block.getDefaultState(), 3);
 				}

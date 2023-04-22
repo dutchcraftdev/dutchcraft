@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:clinton_cube"
+    },
+    {
+      "item": "dutchcraft:clinton_cube"
+    },
+    {
+      "item": "dutchcraft:clinton_cube"
+    },
+    {
+      "item": "dutchcraft:clinton_cube"
+    },
+    {
+      "item": "dutchcraft:clinton_cube"
+    },
+    {
+      "item": "dutchcraft:clinton_cube"
+    },
+    {
+      "item": "dutchcraft:clinton_cube"
+    },
+    {
+      "item": "dutchcraft:clinton_cube"
+    },
+    {
+      "item": "dutchcraft:clinton_cube"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:big_clinton_cube",
+    "count": 1
+  }
+}

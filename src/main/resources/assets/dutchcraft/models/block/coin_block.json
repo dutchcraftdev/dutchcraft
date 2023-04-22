@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dutchcraft:blocks/coin_block_new",
+    "particle": "dutchcraft:blocks/coin_block_new"
+  }
+}

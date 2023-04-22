@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dutchcraft:blocks/trapped_orange_bricks",
+    "up": "dutchcraft:blocks/trapped_orange_bricks",
+    "north": "dutchcraft:blocks/trapped_orange_bricks",
+    "east": "dutchcraft:blocks/trapped_orange_bricks",
+    "south": "dutchcraft:blocks/trapped_orange_bricks",
+    "west": "dutchcraft:blocks/trapped_orange_bricks",
+    "particle": "dutchcraft:blocks/trapped_orange_bricks"
+  }
+}

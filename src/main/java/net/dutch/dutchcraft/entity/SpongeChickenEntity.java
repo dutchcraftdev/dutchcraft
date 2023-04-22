@@ -55,7 +55,7 @@ public class SpongeChickenEntity extends DutchcraftModElements.ModElement {
 			.size(0.4f, 0.7f)).build("sponge_chicken").setRegistryName("sponge_chicken");
 
 	public SpongeChickenEntity(DutchcraftModElements instance) {
-		super(instance, 43);
+		super(instance, 65);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SpongeChickenRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

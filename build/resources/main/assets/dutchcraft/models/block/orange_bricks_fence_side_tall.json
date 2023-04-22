@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "dutchcraft:blocks/orange_bricks",
+    "particle": "dutchcraft:blocks/orange_bricks"
+  }
+}

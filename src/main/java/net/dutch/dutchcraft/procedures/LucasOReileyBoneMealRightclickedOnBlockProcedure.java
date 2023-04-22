@@ -1,8 +1,13 @@
 package net.dutch.dutchcraft.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.GameType;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -53,6 +58,18 @@ public class LucasOReileyBoneMealRightclickedOnBlockProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (!world.isRemote()) {
 			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.GRASS_BLOCK) {
+				if (world instanceof World && !world.isRemote()) {
+					((World) world)
+							.playSound(null, new BlockPos(x, y, z),
+									(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+											.getValue(new ResourceLocation("dutchcraft:block.crystal.shine")),
+									SoundCategory.BLOCKS, (float) 1, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+									.getValue(new ResourceLocation("dutchcraft:block.crystal.shine")),
+							SoundCategory.BLOCKS, (float) 1, (float) 1, false);
+				}
 				world.setBlockState(new BlockPos(x, y, z), CrystalBlock.block.getDefaultState(), 3);
 				if (new Object() {
 					public boolean checkGamemode(Entity _ent) {

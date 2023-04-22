@@ -1,0 +1,8 @@
+{
+  "parent": "dutchcraft:custom/homeless_egg",
+  "textures": {
+    "all": "dutchcraft:blocks/homeless_egg",
+    "particle": "dutchcraft:blocks/homeless_egg",
+    "0": "dutchcraft:blocks/homeless_egg"
+  }
+}

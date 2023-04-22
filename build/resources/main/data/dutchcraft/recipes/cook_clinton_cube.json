@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 2,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "dutchcraft:clinton_cube"
+  },
+  "result": {
+    "item": "dutchcraft:cooked_clinton_cube"
+  }
+}

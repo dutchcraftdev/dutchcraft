@@ -12,15 +12,13 @@ import net.minecraft.block.BlockState;
 import net.dutch.dutchcraft.itemgroup.DUTCHCRAFTItemGroup;
 import net.dutch.dutchcraft.DutchcraftModElements;
 
-//we're gonna kill you dawg
-
 @DutchcraftModElements.ModElement.Tag
 public class OrangeItem extends DutchcraftModElements.ModElement {
 	@ObjectHolder("dutchcraft:orange")
 	public static final Item block = null;
 
 	public OrangeItem(DutchcraftModElements instance) {
-		super(instance, 30);
+		super(instance, 51);
 	}
 
 	@Override

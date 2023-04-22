@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "dutchcraft:blocks/orange_bricks",
+    "top": "dutchcraft:blocks/orange_bricks",
+    "side": "dutchcraft:blocks/orange_bricks"
+  }
+}

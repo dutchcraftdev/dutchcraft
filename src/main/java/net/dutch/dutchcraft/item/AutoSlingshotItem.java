@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
@@ -31,11 +32,16 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 
+import net.dutch.dutchcraft.procedures.SlingshotProjectileHitsLivingEntityProcedure;
 import net.dutch.dutchcraft.itemgroup.DUTCHCRAFTItemGroup;
 import net.dutch.dutchcraft.entity.renderer.AutoSlingshotRenderer;
 import net.dutch.dutchcraft.DutchcraftModElements;
 
+import java.util.stream.Stream;
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
 
 @DutchcraftModElements.ModElement.Tag
 public class AutoSlingshotItem extends DutchcraftModElements.ModElement {
@@ -46,7 +52,7 @@ public class AutoSlingshotItem extends DutchcraftModElements.ModElement {
 			.size(0.5f, 0.5f)).build("projectile_auto_slingshot").setRegistryName("projectile_auto_slingshot");
 
 	public AutoSlingshotItem(DutchcraftModElements instance) {
-		super(instance, 16);
+		super(instance, 26);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new AutoSlingshotRenderer.ModelRegisterHandler());
 	}
 
@@ -161,6 +167,23 @@ public class AutoSlingshotItem extends DutchcraftModElements.ModElement {
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+		}
+
+		@Override
+		public void onEntityHit(EntityRayTraceResult entityRayTraceResult) {
+			super.onEntityHit(entityRayTraceResult);
+			Entity entity = entityRayTraceResult.getEntity();
+			Entity sourceentity = this.func_234616_v_();
+			Entity immediatesourceentity = this;
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+
+			SlingshotProjectileHitsLivingEntityProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override

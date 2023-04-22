@@ -44,6 +44,7 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.dutch.dutchcraft.procedures.ZombieTwoOnInitialEntitySpawnProcedure;
+import net.dutch.dutchcraft.procedures.ZombieTwoEntityDiesProcedure;
 import net.dutch.dutchcraft.itemgroup.DUTCHCRAFTItemGroup;
 import net.dutch.dutchcraft.entity.renderer.ZombieTwoRenderer;
 import net.dutch.dutchcraft.DutchcraftModElements;
@@ -62,7 +63,7 @@ public class ZombieTwoEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.8f)).build("zombie_two").setRegistryName("zombie_two");
 
 	public ZombieTwoEntity(DutchcraftModElements instance) {
-		super(instance, 36);
+		super(instance, 58);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ZombieTwoRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -157,6 +158,19 @@ public class ZombieTwoEntity extends DutchcraftModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.zombie.death"));
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+
+			ZombieTwoEntityDiesProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("sourceentity", sourceentity)).collect(HashMap::new,
+					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override

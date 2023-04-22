@@ -1,0 +1,40 @@
+{
+  "_fv": 33,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "slingshot_nether",
+    "customModelName": "Normal",
+    "name": "Nethershot",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:DUTCHCRAFT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "Items.NETHERBRICK"
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.6,
+    "bulletDamage": 7.0,
+    "bulletKnockback": 3,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Items.NETHERBRICK"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "SlingshotProjectileHitsLivingEntity"
+    }
+  }
+}

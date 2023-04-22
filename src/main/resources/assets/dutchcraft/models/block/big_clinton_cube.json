@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dutchcraft:blocks/clinton_cube_block",
+    "particle": "dutchcraft:blocks/clinton_cube_block"
+  }
+}

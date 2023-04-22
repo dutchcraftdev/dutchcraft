@@ -32,6 +32,9 @@
       "value": "Items.BRICK"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "SlingshotProjectileHitsLivingEntity"
+    }
   }
 }

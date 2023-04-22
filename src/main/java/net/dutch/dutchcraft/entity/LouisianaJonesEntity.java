@@ -47,7 +47,7 @@ public class LouisianaJonesEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.8f)).build("louisiana_jones").setRegistryName("louisiana_jones");
 
 	public LouisianaJonesEntity(DutchcraftModElements instance) {
-		super(instance, 41);
+		super(instance, 63);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LouisianaJonesRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
@@ -98,7 +98,7 @@ public class LouisianaJonesEntity extends DutchcraftModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 0.5, true) {
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1, true) {
 				@Override
 				protected double getAttackReachSqr(LivingEntity entity) {
 					return (double) (4.0 + entity.getWidth() * entity.getWidth());

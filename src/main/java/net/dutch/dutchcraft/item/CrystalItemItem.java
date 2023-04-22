@@ -17,7 +17,7 @@ public class CrystalItemItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public CrystalItemItem(DutchcraftModElements instance) {
-		super(instance, 22);
+		super(instance, 35);
 	}
 
 	@Override

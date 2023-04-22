@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:UnstableMaterial"
+      },
+      {
+        "value": "CUSTOM:UnstableMaterial"
+      },
+      {
+        "value": "CUSTOM:UnstableMaterial"
+      },
+      {
+        "value": "CUSTOM:UnstableMaterial"
+      },
+      {
+        "value": "CUSTOM:SuicideBricks"
+      },
+      {
+        "value": "CUSTOM:UnstableMaterial"
+      },
+      {
+        "value": "CUSTOM:UnstableMaterial"
+      },
+      {
+        "value": "CUSTOM:UnstableMaterial"
+      },
+      {
+        "value": "CUSTOM:UnstableMaterial"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UnstableBricks"
+    },
+    "name": "unstable_bricks_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:orange_brick"
+    },
+    {
+      "item": "dutchcraft:orange_brick"
+    },
+    {
+      "item": "dutchcraft:orange_brick"
+    },
+    {
+      "item": "dutchcraft:orange_brick"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:orange_bricks_wood",
+    "count": 1
+  }
+}

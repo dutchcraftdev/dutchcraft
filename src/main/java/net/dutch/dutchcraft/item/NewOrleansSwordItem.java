@@ -17,7 +17,7 @@ public class NewOrleansSwordItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public NewOrleansSwordItem(DutchcraftModElements instance) {
-		super(instance, 14);
+		super(instance, 24);
 	}
 
 	@Override

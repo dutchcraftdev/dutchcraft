@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "dutchcraft:trapped_orange_bricks"
+    },
+    "2": {
+      "item": "dutchcraft:trapped_orange_bricks"
+    },
+    "3": {
+      "item": "dutchcraft:trapped_orange_bricks"
+    },
+    "4": {
+      "item": "minecraft:barrel"
+    },
+    "5": {
+      "item": "dutchcraft:trapped_orange_bricks"
+    },
+    "6": {
+      "item": "dutchcraft:trapped_orange_bricks"
+    },
+    "7": {
+      "item": "dutchcraft:trapped_orange_bricks"
+    }
+  },
+  "result": {
+    "item": "dutchcraft:better_barrel",
+    "count": 1
+  }
+}

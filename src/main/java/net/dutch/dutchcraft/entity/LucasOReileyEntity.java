@@ -25,6 +25,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
@@ -52,7 +53,7 @@ public class LucasOReileyEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.8f)).build("lucas_o_reiley").setRegistryName("lucas_o_reiley");
 
 	public LucasOReileyEntity(DutchcraftModElements instance) {
-		super(instance, 37);
+		super(instance, 59);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LucasOReileyRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -260,6 +261,8 @@ public class LucasOReileyEntity extends DutchcraftModElements.ModElement {
 			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, KillaBillClintonEntity.CustomEntity.class, false, false));
+			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, KillaBillClintonCloneEntity.CustomEntity.class, false, false));
 		}
 
 		@Override

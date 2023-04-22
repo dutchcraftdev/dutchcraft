@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "dutchcraft:blocks/orange_bricks",
+    "particle": "dutchcraft:blocks/orange_bricks"
+  }
+}

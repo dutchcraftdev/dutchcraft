@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "dutchcraft:block/orange_bricks_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "dutchcraft:block/orange_bricks_wood"
+    },
+    "axis=z": {
+      "model": "dutchcraft:block/orange_bricks_wood",
+      "x": 90
+    }
+  }
+}

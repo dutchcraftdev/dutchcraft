@@ -36,7 +36,7 @@ public class OrangeLeavesBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public OrangeLeavesBlock(DutchcraftModElements instance) {
-		super(instance, 1);
+		super(instance, 2);
 	}
 
 	@Override

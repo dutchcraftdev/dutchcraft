@@ -54,7 +54,7 @@ public class UnstableBricksBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public UnstableBricksBlock(DutchcraftModElements instance) {
-		super(instance, 8);
+		super(instance, 14);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

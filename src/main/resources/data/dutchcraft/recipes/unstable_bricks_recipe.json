@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dutchcraft:unstable_material"
+    },
+    "1": {
+      "item": "dutchcraft:unstable_material"
+    },
+    "2": {
+      "item": "dutchcraft:unstable_material"
+    },
+    "3": {
+      "item": "dutchcraft:unstable_material"
+    },
+    "4": {
+      "item": "dutchcraft:suicide_bricks"
+    },
+    "5": {
+      "item": "dutchcraft:unstable_material"
+    },
+    "6": {
+      "item": "dutchcraft:unstable_material"
+    },
+    "7": {
+      "item": "dutchcraft:unstable_material"
+    },
+    "8": {
+      "item": "dutchcraft:unstable_material"
+    }
+  },
+  "result": {
+    "item": "dutchcraft:unstable_bricks",
+    "count": 1
+  }
+}

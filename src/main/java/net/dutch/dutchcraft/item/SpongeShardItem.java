@@ -17,7 +17,7 @@ public class SpongeShardItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public SpongeShardItem(DutchcraftModElements instance) {
-		super(instance, 26);
+		super(instance, 39);
 	}
 
 	@Override

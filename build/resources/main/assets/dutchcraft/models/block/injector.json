@@ -1,0 +1,8 @@
+{
+  "parent": "dutchcraft:custom/injector",
+  "textures": {
+    "all": "dutchcraft:blocks/injector",
+    "particle": "dutchcraft:blocks/injector",
+    "0": "dutchcraft:blocks/injector"
+  }
+}
