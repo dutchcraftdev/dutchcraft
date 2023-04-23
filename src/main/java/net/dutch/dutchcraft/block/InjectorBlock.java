@@ -46,7 +46,7 @@ public class InjectorBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public InjectorBlock(DutchcraftModElements instance) {
-		super(instance, 19);
+		super(instance, 22);
 	}
 
 	@Override

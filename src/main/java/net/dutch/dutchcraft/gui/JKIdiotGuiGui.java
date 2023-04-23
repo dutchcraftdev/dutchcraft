@@ -34,7 +34,7 @@ public class JKIdiotGuiGui extends DutchcraftModElements.ModElement {
 	private static ContainerType<GuiContainerMod> containerType = null;
 
 	public JKIdiotGuiGui(DutchcraftModElements instance) {
-		super(instance, 106);
+		super(instance, 110);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

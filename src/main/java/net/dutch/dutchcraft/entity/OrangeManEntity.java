@@ -42,7 +42,7 @@ public class OrangeManEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.8f)).build("orange_man").setRegistryName("orange_man");
 
 	public OrangeManEntity(DutchcraftModElements instance) {
-		super(instance, 64);
+		super(instance, 69);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new OrangeManRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

@@ -52,7 +52,7 @@ public class SlingshotItem extends DutchcraftModElements.ModElement {
 			.size(0.5f, 0.5f)).build("projectile_slingshot").setRegistryName("projectile_slingshot");
 
 	public SlingshotItem(DutchcraftModElements instance) {
-		super(instance, 25);
+		super(instance, 27);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SlingshotRenderer.ModelRegisterHandler());
 	}
 

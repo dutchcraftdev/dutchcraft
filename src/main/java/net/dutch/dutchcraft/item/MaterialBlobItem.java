@@ -17,7 +17,7 @@ public class MaterialBlobItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public MaterialBlobItem(DutchcraftModElements instance) {
-		super(instance, 40);
+		super(instance, 43);
 	}
 
 	@Override

@@ -21,7 +21,7 @@ public class StickyKeysItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public StickyKeysItem(DutchcraftModElements instance) {
-		super(instance, 37);
+		super(instance, 40);
 	}
 
 	@Override

@@ -38,7 +38,7 @@ public class LouisianaJonesBlockBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public LouisianaJonesBlockBlock(DutchcraftModElements instance) {
-		super(instance, 18);
+		super(instance, 19);
 	}
 
 	@Override

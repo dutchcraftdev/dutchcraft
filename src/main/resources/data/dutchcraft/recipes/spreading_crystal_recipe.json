@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dutchcraft:spreading_crystal_item"
+    },
+    {
+      "item": "dutchcraft:spreading_crystal_item"
+    },
+    {
+      "item": "dutchcraft:spreading_crystal_item"
+    },
+    {
+      "item": "dutchcraft:spreading_crystal_item"
+    },
+    {
+      "item": "dutchcraft:spreading_crystal_item"
+    },
+    {
+      "item": "dutchcraft:spreading_crystal_item"
+    },
+    {
+      "item": "dutchcraft:spreading_crystal_item"
+    },
+    {
+      "item": "dutchcraft:spreading_crystal_item"
+    },
+    {
+      "item": "dutchcraft:spreading_crystal_item"
+    }
+  ],
+  "result": {
+    "item": "dutchcraft:spreading_crystal",
+    "count": 1
+  }
+}

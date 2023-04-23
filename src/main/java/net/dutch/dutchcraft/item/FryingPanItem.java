@@ -26,7 +26,7 @@ public class FryingPanItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public FryingPanItem(DutchcraftModElements instance) {
-		super(instance, 23);
+		super(instance, 25);
 	}
 
 	@Override

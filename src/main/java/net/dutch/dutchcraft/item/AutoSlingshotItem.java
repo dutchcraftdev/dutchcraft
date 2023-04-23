@@ -52,7 +52,7 @@ public class AutoSlingshotItem extends DutchcraftModElements.ModElement {
 			.size(0.5f, 0.5f)).build("projectile_auto_slingshot").setRegistryName("projectile_auto_slingshot");
 
 	public AutoSlingshotItem(DutchcraftModElements instance) {
-		super(instance, 26);
+		super(instance, 28);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new AutoSlingshotRenderer.ModelRegisterHandler());
 	}
 

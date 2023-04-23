@@ -1,0 +1,8 @@
+{
+  "parent": "dutchcraft:custom/spreading_crystal_stem",
+  "textures": {
+    "all": "dutchcraft:blocks/spreading_crystal_stem",
+    "particle": "dutchcraft:blocks/spreading_crystal_stem",
+    "0": "dutchcraft:blocks/spreading_crystal_stem"
+  }
+}

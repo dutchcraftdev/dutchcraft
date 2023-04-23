@@ -45,7 +45,7 @@ public class LucasOReileyBodyPillowItem extends DutchcraftModElements.ModElement
 	public static final Item boots = null;
 
 	public LucasOReileyBodyPillowItem(DutchcraftModElements instance) {
-		super(instance, 31);
+		super(instance, 33);
 	}
 
 	@Override

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "spreading_crystal_stem"
+      },
+      "name": "default"
+    }
+  }
+}

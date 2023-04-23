@@ -26,7 +26,7 @@ public class LegoIndianaJonesXbox360Item extends DutchcraftModElements.ModElemen
 	public static final Item block = null;
 
 	public LegoIndianaJonesXbox360Item(DutchcraftModElements instance) {
-		super(instance, 57);
+		super(instance, 61);
 	}
 
 	@Override

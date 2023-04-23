@@ -17,7 +17,7 @@ public class InjectionNeedleItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public InjectionNeedleItem(DutchcraftModElements instance) {
-		super(instance, 45);
+		super(instance, 48);
 	}
 
 	@Override

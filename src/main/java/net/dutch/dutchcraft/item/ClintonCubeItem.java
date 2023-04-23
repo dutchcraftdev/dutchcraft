@@ -17,7 +17,7 @@ public class ClintonCubeItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public ClintonCubeItem(DutchcraftModElements instance) {
-		super(instance, 47);
+		super(instance, 50);
 	}
 
 	@Override

@@ -17,7 +17,7 @@ public class SocorItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public SocorItem(DutchcraftModElements instance) {
-		super(instance, 32);
+		super(instance, 34);
 	}
 
 	@Override
