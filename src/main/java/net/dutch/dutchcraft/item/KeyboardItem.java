@@ -27,7 +27,7 @@ public class KeyboardItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public KeyboardItem(DutchcraftModElements instance) {
-		super(instance, 47);
+		super(instance, 55);
 	}
 
 	@Override

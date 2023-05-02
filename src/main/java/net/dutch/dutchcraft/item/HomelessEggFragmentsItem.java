@@ -17,7 +17,7 @@ public class HomelessEggFragmentsItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public HomelessEggFragmentsItem(DutchcraftModElements instance) {
-		super(instance, 53);
+		super(instance, 61);
 	}
 
 	@Override

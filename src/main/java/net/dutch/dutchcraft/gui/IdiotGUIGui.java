@@ -34,7 +34,7 @@ public class IdiotGUIGui extends DutchcraftModElements.ModElement {
 	private static ContainerType<GuiContainerMod> containerType = null;
 
 	public IdiotGUIGui(DutchcraftModElements instance) {
-		super(instance, 106);
+		super(instance, 114);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

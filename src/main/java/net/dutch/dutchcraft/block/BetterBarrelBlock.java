@@ -75,7 +75,7 @@ public class BetterBarrelBlock extends DutchcraftModElements.ModElement {
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
 
 	public BetterBarrelBlock(DutchcraftModElements instance) {
-		super(instance, 23);
+		super(instance, 24);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 

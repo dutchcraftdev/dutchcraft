@@ -28,7 +28,7 @@ public class OrangeBricksPressurePlateBlock extends DutchcraftModElements.ModEle
 	public static final Block block = null;
 
 	public OrangeBricksPressurePlateBlock(DutchcraftModElements instance) {
-		super(instance, 25);
+		super(instance, 27);
 	}
 
 	@Override

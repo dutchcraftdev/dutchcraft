@@ -63,7 +63,7 @@ public class CrowEntity extends DutchcraftModElements.ModElement {
 			.size(0.4f, 0.7f)).build("crow").setRegistryName("crow");
 
 	public CrowEntity(DutchcraftModElements instance) {
-		super(instance, 67);
+		super(instance, 75);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new CrowRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

@@ -17,7 +17,7 @@ public class GearItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public GearItem(DutchcraftModElements instance) {
-		super(instance, 50);
+		super(instance, 58);
 	}
 
 	@Override

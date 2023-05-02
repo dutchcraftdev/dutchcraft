@@ -17,7 +17,7 @@ public class UnstableMaterialItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public UnstableMaterialItem(DutchcraftModElements instance) {
-		super(instance, 45);
+		super(instance, 53);
 	}
 
 	@Override

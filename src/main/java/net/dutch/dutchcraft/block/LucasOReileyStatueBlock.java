@@ -44,7 +44,7 @@ public class LucasOReileyStatueBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public LucasOReileyStatueBlock(DutchcraftModElements instance) {
-		super(instance, 24);
+		super(instance, 25);
 	}
 
 	@Override
@@ -61,7 +61,7 @@ public class LucasOReileyStatueBlock extends DutchcraftModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
 					.tickRandomly().setOpaque((bs, br, bp) -> false));
 			setRegistryName("lucas_o_reiley_statue");
 		}

@@ -1,0 +1,308 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 376,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bandwidth.png",
+          "use1Xscale": true,
+          "name": "bandwidth.png",
+          "x": 33,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "On 16 March, 1978, former Italian prime minister, ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "On 16 March, 1978, former Italian prime minister, ",
+          "x": 105,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Aldo Moro, was kidnapped by several members of ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Aldo Moro, was kidnapped by several members of ",
+          "x": 105,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "the Brigate Rosse (the Red Brigades) in Rome, ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "the Brigate Rosse (the Red Brigades) in Rome, ",
+          "x": 105,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "a militant communist organization. During this ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "a militant communist organization. During this ",
+          "x": 105,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "time, he was submitted to a \"people's trial\" ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "time, he was submitted to a \"people's trial\" ",
+          "x": 105,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "and sent a variety of letters to his family and ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "and sent a variety of letters to his family and ",
+          "x": 105,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "associates. Negotiations occured during his ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "associates. Negotiations occured during his ",
+          "x": 105,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "captivity, although these failed. 54 days later, ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "captivity, although these failed. 54 days later, ",
+          "x": 105,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "he was found dead in a car sat in between the ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "he was found dead in a car sat in between the ",
+          "x": 33,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "headquarters of the Christian Democratic Party ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "headquarters of the Christian Democratic Party ",
+          "x": 33,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "and the Italian Communist Party. ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "and the Italian Communist Party. ",
+          "x": 33,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "A variety of theories surround his killing. ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "A variety of theories surround his killing. ",
+          "x": 33,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "During this time, a stay-behind organization set up by the ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "During this time, a stay-behind organization set up by the ",
+          "x": 33,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "United States known as \"Operation Gladio\" was active in ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "United States known as \"Operation Gladio\" was active in ",
+          "x": 33,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Italy. It employed a \"strategy of tension\" in order to ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Italy. It employed a \"strategy of tension\" in order to ",
+          "x": 33,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "maintain control over Western Europe. This is related ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "maintain control over Western Europe. This is related ",
+          "x": 33,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "to the theory that the assassination was staged by the ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "to the theory that the assassination was staged by the ",
+          "x": 33,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "United States in order to end the \"Historic Compromise\" ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "United States in order to end the \"Historic Compromise\" ",
+          "x": 33,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "between the Christian Democratic party and the Italian ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "between the Christian Democratic party and the Italian ",
+          "x": 33,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Communist Party, preventing a communist party from gaining ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Communist Party, preventing a communist party from gaining ",
+          "x": 33,
+          "y": 197
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "control in Italy.",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "control in Italy.",
+          "x": 33,
+          "y": 206
+        }
+      }
+    ],
+    "onClosed": {
+      "name": "AldoMoroThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

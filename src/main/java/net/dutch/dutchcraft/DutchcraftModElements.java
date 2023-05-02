@@ -68,6 +68,8 @@ public class DutchcraftModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "block.crystal.shine")));
 		sounds.put(new ResourceLocation("dutchcraft", "item.bib.equip"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "item.bib.equip")));
+		sounds.put(new ResourceLocation("dutchcraft", "blocks.shia.vomit"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("dutchcraft", "blocks.shia.vomit")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("dutchcraft").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

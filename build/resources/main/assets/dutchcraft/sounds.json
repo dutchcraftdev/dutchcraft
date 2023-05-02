@@ -126,5 +126,15 @@
         "stream": false
       }
     ]
+  },
+  "blocks.shia.vomit": {
+    "category": "block",
+    "subtitle": "subtitles.blocks.shia.vomit",
+    "sounds": [
+      {
+        "name": "dutchcraft:balled",
+        "stream": false
+      }
+    ]
   }
 }

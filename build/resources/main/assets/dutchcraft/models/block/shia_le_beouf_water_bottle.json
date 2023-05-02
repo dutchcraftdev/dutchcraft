@@ -1,0 +1,8 @@
+{
+  "parent": "dutchcraft:custom/shia_lebeouf_water_bottle",
+  "textures": {
+    "all": "dutchcraft:blocks/shia_lebeouf_water_bottle",
+    "particle": "dutchcraft:blocks/shia_lebeouf_water_bottle",
+    "0": "dutchcraft:blocks/shia_lebeouf_water_bottle"
+  }
+}

@@ -17,7 +17,7 @@ public class RugbyItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public RugbyItem(DutchcraftModElements instance) {
-		super(instance, 36);
+		super(instance, 44);
 	}
 
 	@Override

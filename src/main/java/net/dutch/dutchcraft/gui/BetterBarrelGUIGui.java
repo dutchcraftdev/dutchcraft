@@ -41,7 +41,7 @@ public class BetterBarrelGUIGui extends DutchcraftModElements.ModElement {
 	private static ContainerType<GuiContainerMod> containerType = null;
 
 	public BetterBarrelGUIGui(DutchcraftModElements instance) {
-		super(instance, 153);
+		super(instance, 161);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

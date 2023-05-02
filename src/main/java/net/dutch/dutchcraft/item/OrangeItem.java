@@ -18,7 +18,7 @@ public class OrangeItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public OrangeItem(DutchcraftModElements instance) {
-		super(instance, 55);
+		super(instance, 63);
 	}
 
 	@Override

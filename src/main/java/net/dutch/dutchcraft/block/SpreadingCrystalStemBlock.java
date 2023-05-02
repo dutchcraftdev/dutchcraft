@@ -40,7 +40,7 @@ public class SpreadingCrystalStemBlock extends DutchcraftModElements.ModElement 
 	public static final Block block = null;
 
 	public SpreadingCrystalStemBlock(DutchcraftModElements instance) {
-		super(instance, 21);
+		super(instance, 22);
 	}
 
 	@Override

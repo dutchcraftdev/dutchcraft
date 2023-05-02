@@ -18,7 +18,7 @@ public class CookedClintonCubeItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public CookedClintonCubeItem(DutchcraftModElements instance) {
-		super(instance, 61);
+		super(instance, 69);
 	}
 
 	@Override

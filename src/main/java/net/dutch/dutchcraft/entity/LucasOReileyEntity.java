@@ -53,7 +53,7 @@ public class LucasOReileyEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.8f)).build("lucas_o_reiley").setRegistryName("lucas_o_reiley");
 
 	public LucasOReileyEntity(DutchcraftModElements instance) {
-		super(instance, 64);
+		super(instance, 72);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LucasOReileyRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

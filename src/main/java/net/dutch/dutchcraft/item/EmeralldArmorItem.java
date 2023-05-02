@@ -39,7 +39,7 @@ public class EmeralldArmorItem extends DutchcraftModElements.ModElement {
 	public static final Item boots = null;
 
 	public EmeralldArmorItem(DutchcraftModElements instance) {
-		super(instance, 173);
+		super(instance, 30);
 	}
 
 	@Override

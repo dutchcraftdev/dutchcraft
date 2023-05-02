@@ -18,7 +18,7 @@ public class HomelessTearItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public HomelessTearItem(DutchcraftModElements instance) {
-		super(instance, 52);
+		super(instance, 60);
 	}
 
 	@Override

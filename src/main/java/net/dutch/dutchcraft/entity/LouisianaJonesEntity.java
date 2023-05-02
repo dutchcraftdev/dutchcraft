@@ -47,7 +47,7 @@ public class LouisianaJonesEntity extends DutchcraftModElements.ModElement {
 			.size(0.6f, 1.8f)).build("louisiana_jones").setRegistryName("louisiana_jones");
 
 	public LouisianaJonesEntity(DutchcraftModElements instance) {
-		super(instance, 69);
+		super(instance, 77);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LouisianaJonesRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

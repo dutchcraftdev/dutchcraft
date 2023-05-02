@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "dutchcraft:aldo_moro_boykisser_cube"
+    },
+    "title": {
+      "translate": "advancements.aldo_moro_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.aldo_moro_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aldo_moro_achievement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "minecraft:story/smelt_iron"
+}

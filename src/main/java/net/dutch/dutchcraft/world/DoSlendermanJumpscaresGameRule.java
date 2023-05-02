@@ -14,7 +14,7 @@ public class DoSlendermanJumpscaresGameRule extends DutchcraftModElements.ModEle
 			create(true));
 
 	public DoSlendermanJumpscaresGameRule(DutchcraftModElements instance) {
-		super(instance, 178);
+		super(instance, 185);
 	}
 
 	public static GameRules.RuleType<GameRules.BooleanValue> create(boolean defaultValue) {

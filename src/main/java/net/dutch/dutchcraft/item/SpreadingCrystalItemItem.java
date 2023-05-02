@@ -17,7 +17,7 @@ public class SpreadingCrystalItemItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public SpreadingCrystalItemItem(DutchcraftModElements instance) {
-		super(instance, 39);
+		super(instance, 47);
 	}
 
 	@Override

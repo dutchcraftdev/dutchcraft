@@ -25,7 +25,7 @@ public class TrappedOrangeBricksBlock extends DutchcraftModElements.ModElement {
 	public static final Block block = null;
 
 	public TrappedOrangeBricksBlock(DutchcraftModElements instance) {
-		super(instance, 152);
+		super(instance, 160);
 	}
 
 	@Override
