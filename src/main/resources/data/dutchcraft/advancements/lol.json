@@ -1,0 +1,28 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "dutchcraft:orange_brick"
+    },
+    "title": {
+      "translate": "advancements.lol.title"
+    },
+    "description": {
+      "translate": "advancements.lol.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "lol": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "dutchcraft:orange"
+        }
+      }
+    }
+  }
+}

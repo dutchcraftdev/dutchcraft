@@ -52,7 +52,7 @@ public class NethershotItem extends DutchcraftModElements.ModElement {
 			.size(0.5f, 0.5f)).build("projectile_nethershot").setRegistryName("projectile_nethershot");
 
 	public NethershotItem(DutchcraftModElements instance) {
-		super(instance, 29);
+		super(instance, 30);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new NethershotRenderer.ModelRegisterHandler());
 	}
 

@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CrystalItem"
+      },
+      {
+        "value": "CUSTOM:SpreadingCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalItem"
+      },
+      {
+        "value": "CUSTOM:SpreadingCrystal"
+      },
+      {
+        "value": "CUSTOM:Crystal"
+      },
+      {
+        "value": "CUSTOM:SpreadingCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalItem"
+      },
+      {
+        "value": "CUSTOM:SpreadingCrystal"
+      },
+      {
+        "value": "CUSTOM:CrystalItem"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LucasOReileyStatue"
+    },
+    "name": "lucas_o_reiley_statue_recipe",
+    "namespace": "mod"
+  }
+}

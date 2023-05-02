@@ -52,7 +52,7 @@ public class AutoSlingshotNetherItem extends DutchcraftModElements.ModElement {
 			.size(0.5f, 0.5f)).build("projectile_auto_slingshot_nether").setRegistryName("projectile_auto_slingshot_nether");
 
 	public AutoSlingshotNetherItem(DutchcraftModElements instance) {
-		super(instance, 30);
+		super(instance, 31);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new AutoSlingshotNetherRenderer.ModelRegisterHandler());
 	}
 

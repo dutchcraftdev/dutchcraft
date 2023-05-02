@@ -37,32 +37,14 @@ public class LondonIn1943OnEffectActiveTickProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		if (MathHelper.nextInt(new Random(), 1, 40) == 3) {
-			if (MathHelper.nextInt(new Random(), 1, 5) == 3) {
+		double x1 = 0;
+		double y1 = 0;
+		if (MathHelper.nextInt(new Random(), 1, 30) == 3) {
+			x1 = (MathHelper.nextInt(new Random(), 1, 50));
+			y1 = (MathHelper.nextInt(new Random(), 1, 50));
+			if (Math.sqrt((x1 - x) * (x1 - x) + (y1 - z) * (y1 - z)) > 20) {
 				if (world instanceof World && !((World) world).isRemote) {
-					((World) world).createExplosion(null, (int) (x + MathHelper.nextInt(new Random(), 0, 50)), (int) y,
-							(int) (z - MathHelper.nextInt(new Random(), 25, 50)), (float) (MathHelper.nextInt(new Random(), 1, 6)),
-							Explosion.Mode.BREAK);
-				}
-			}
-			if (MathHelper.nextInt(new Random(), 1, 5) == 3) {
-				if (world instanceof World && !((World) world).isRemote) {
-					((World) world).createExplosion(null, (int) (x - MathHelper.nextInt(new Random(), 25, 50)), (int) y,
-							(int) (z + MathHelper.nextInt(new Random(), 0, 50)), (float) (MathHelper.nextInt(new Random(), 1, 6)),
-							Explosion.Mode.BREAK);
-				}
-			}
-			if (MathHelper.nextInt(new Random(), 1, 5) == 3) {
-				if (world instanceof World && !((World) world).isRemote) {
-					((World) world).createExplosion(null, (int) (x + MathHelper.nextInt(new Random(), 0, 50)), (int) y,
-							(int) (z + MathHelper.nextInt(new Random(), 25, 50)), (float) (MathHelper.nextInt(new Random(), 1, 6)),
-							Explosion.Mode.BREAK);
-				}
-			}
-			if (MathHelper.nextInt(new Random(), 1, 5) == 3) {
-				if (world instanceof World && !((World) world).isRemote) {
-					((World) world).createExplosion(null, (int) (x - MathHelper.nextInt(new Random(), 25, 50)), (int) y,
-							(int) (z - MathHelper.nextInt(new Random(), 0, 50)), (float) (MathHelper.nextInt(new Random(), 1, 6)),
+					((World) world).createExplosion(null, (int) x1, (int) y, (int) y1, (float) (MathHelper.nextInt(new Random(), 1, 6)),
 							Explosion.Mode.BREAK);
 				}
 			}

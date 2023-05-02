@@ -40,7 +40,7 @@ public class OrangeBiomeBiome extends DutchcraftModElements.ModElement {
 	public static Biome biome;
 
 	public OrangeBiomeBiome(DutchcraftModElements instance) {
-		super(instance, 117);
+		super(instance, 118);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 

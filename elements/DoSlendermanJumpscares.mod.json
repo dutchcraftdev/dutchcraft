@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Slenderman Jumpsacres",
+    "description": "Cause Emerald Armor Jumpscares",
+    "category": "PLAYER",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}

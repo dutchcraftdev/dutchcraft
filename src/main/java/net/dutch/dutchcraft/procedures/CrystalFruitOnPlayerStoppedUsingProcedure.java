@@ -41,7 +41,7 @@ public class CrystalFruitOnPlayerStoppedUsingProcedure {
 		if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.GRASS_BLOCK) {
 			if (MathHelper.nextInt(new Random(), 1, 16) == 3) {
 				world.setBlockState(new BlockPos(x, y - 1, z), SpreadingCrystalBlock.block.getDefaultState(), 3);
-			}
+			} // lol penis
 		}
 	}
 }

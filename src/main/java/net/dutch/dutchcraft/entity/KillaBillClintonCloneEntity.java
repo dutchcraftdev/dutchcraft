@@ -53,7 +53,7 @@ public class KillaBillClintonCloneEntity extends DutchcraftModElements.ModElemen
 			.size(0.6f, 1.8f)).build("killa_bill_clinton_clone").setRegistryName("killa_bill_clinton_clone");
 
 	public KillaBillClintonCloneEntity(DutchcraftModElements instance) {
-		super(instance, 72);
+		super(instance, 73);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new KillaBillClintonCloneRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

@@ -20,7 +20,7 @@ public class AntidepressantsItem extends DutchcraftModElements.ModElement {
 	public static final Item block = null;
 
 	public AntidepressantsItem(DutchcraftModElements instance) {
-		super(instance, 47);
+		super(instance, 48);
 	}
 
 	@Override

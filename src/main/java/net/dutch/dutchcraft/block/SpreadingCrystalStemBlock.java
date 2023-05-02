@@ -75,7 +75,7 @@ public class SpreadingCrystalStemBlock extends DutchcraftModElements.ModElement 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(7, 0, 7, 11, 16, 11))
+			return VoxelShapes.or(makeCuboidShape(7, 0, -7, 10, 16, -10))
 
 					.withOffset(offset.x, offset.y, offset.z);
 		}

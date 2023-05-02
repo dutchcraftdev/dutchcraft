@@ -6,9 +6,10 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
-import net.minecraft.block.Blocks;
 
 import net.dutch.dutchcraft.item.CrystalFruitItem;
+import net.dutch.dutchcraft.block.SpreadingCrystalStemBlock;
+import net.dutch.dutchcraft.block.SpreadingCrystalBlock;
 import net.dutch.dutchcraft.DutchcraftMod;
 
 import java.util.Random;
@@ -41,7 +42,8 @@ public class SpreadingCrystalStemNeighbourBlockChangesProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.AIR) {
+		if (!((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == SpreadingCrystalBlock.block
+				|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == SpreadingCrystalStemBlock.block)) {
 			world.destroyBlock(new BlockPos(x, y, z), false);
 			for (int index0 = 0; index0 < (int) (MathHelper.nextInt(new Random(), 1, 4)); index0++) {
 				if (world instanceof World && !world.isRemote()) {

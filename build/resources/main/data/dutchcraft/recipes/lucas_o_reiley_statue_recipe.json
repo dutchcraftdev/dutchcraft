@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dutchcraft:crystal"
+    },
+    "1": {
+      "item": "dutchcraft:spreading_crystal"
+    },
+    "2": {
+      "item": "dutchcraft:crystal"
+    },
+    "3": {
+      "item": "dutchcraft:spreading_crystal"
+    },
+    "4": {
+      "item": "dutchcraft:crystal_block"
+    },
+    "5": {
+      "item": "dutchcraft:spreading_crystal"
+    },
+    "6": {
+      "item": "dutchcraft:crystal"
+    },
+    "7": {
+      "item": "dutchcraft:spreading_crystal"
+    },
+    "8": {
+      "item": "dutchcraft:crystal"
+    }
+  },
+  "result": {
+    "item": "dutchcraft:lucas_o_reiley_statue",
+    "count": 1
+  }
+}
